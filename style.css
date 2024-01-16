@@ -1,5 +1,234 @@
+/* colors
+  green: #6B7E6B;
+  black: #3B3B3B
+*/
+
+
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+/* ------------- Utility Classes --------------  */
+
+.left     {  text-align: left;     }
+.right    {  text-align: right;    }
+.centered {  text-align: center;   }
+
+
+.padded   {  padding: 5%;    }
+.padded-05 {  padding: 0.5rem;  }
+.padded-1 {  padding: 1rem;  }
+.padded-2 {  padding: 2rem;  }
+.padded-t {  padding-top: 4rem; }
+.padded-b {  padding-top: 2rem; }
+.padded-r {  padding-right: 1rem;}
+
+.banner-top { padding-top: 21rem;}
+
+.nav-padded { padding: 0px 3rem; }
+
+.capped-width { max-width: 1100px; margin: auto;}
+
+.tall-10  {  min-height: 10vh;   }
+.tall-20  {  min-height: 20vh;   }
+.tall-40  {  min-height: 40vh;   }
+.tall-50  {  min-height: 50vh;   }
+.tall-100 {  min-height: 100vh;  }
+
+.dark-bg      {  background-color: #3B3B3B;     }
+.green-bg     {  background-color: #6B7E6B;}
+.light-bg     {  background-color: #F5F5F5;  }
+.featured-bg  {  background-color: #ffeaa7;             }
+
+.light-text   { color: white; }
+.caps {text-transform: uppercase;}
+
+
+.flex-flip:nth-child(2n){  flex-direction: row-reverse; }
+
+  /* General typography */
+
+  h2, h3, h4 {
+    font-family: 'Wildflower Blossom';
+    src: url('wildflowerblossomitalicttf-webfont.woff2') format('woff2'),
+         url('wildflowerblossomitalicttf-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    letter-spacing: .08em;
+  }
+  
+  h2, h3, h4, h5, h6 {
+  line-height: 1;
+  margin-bottom: 0.8rem;
+  }
+
+  h2  { font-size: 3rem;  }
+  h3  { font-size: 1.8rem;  }
+  h4  { font-size: 1.4rem;  }
+  p   { font-size: 1rem;  
+        font-family: "ltc-bodoni-175", serif;
+        font-weight: 400;
+        font-style: normal;}
+
+  p, ul {
+   margin-bottom: 0.8rem;
+  }
+
+  /* this makes sure that the last element in any container doesn't have margin-bottom */
+  h2:last-child,
+  h3:last-child,
+  h4:last-child,
+  h5:last-child,
+  h6:last-child,
+  p:last-child {
+  margin-bottom:0;
+  }
+
+  /* this is a line element */
+
+  hr { 
+  border: none;
+  border-bottom: 1px solid;
+  width: 10rem;
+  margin-bottom: 1rem;
+  box-align: center;
+  margin: auto;
+  }
+
+/* Nav */
+
+  nav a {
+    font-size: 1.5rem;
+    font-family: 'Wildflower Blossom';
+    text-transform: uppercase;
+  }
+
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+
+  a:hover {
+    color: #6B7E6B;
+  }
+
+/* Aspect Ratio  */
+.portrait-tall { padding-bottom: 175%; }
+.portrait { padding-bottom: 125%; }
+.square { padding-bottom: 100%; }
+.landscape { padding-bottom: 66%; }
+.landscape-wide { padding-bottom: 56%; }
+
+/* Background Position */
+.bg-pos-t { background-position: top; }
+.bg-pos-b { background-position: bottom; }
+.bg-pos-l { background-position: left; }
+.bg-pos-r { background-position: right; }
+
+
+/* Header style */
+
+header {
+  padding: 1% 5%;
+}
+
+
+/* footer style */
+
+.inline a {
+  display:inline-block;
+  padding: 0.5rem;
+}
+
+
+/* images */
+
+.bg-image {
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-mountains {
+  background-image: url(/images/mountains-icon.png);
+  background-size: 10%;
+}
+
+.bg-logo {
+  background-image: url(/images/logo.PNG);
+  background-size: 20%;
+}
+
+.bg-flower {
+  background-image: url(/images/flower.PNG);
+  background-size: 20%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg-family {
+  background-image: url(/images/family.jpg);
+}
+
+.bg-couple {
+  background-image: url(/images/couple.jpg);
+}
+
+.bg-lifestyle {
+  background-image: url(/images/lifestyle-2.jpg);
+}
+
+.bg-wedding {
+  background-image: url(/images/wedding.jpg);
+}
+
+.bg-bryn {
+  background-image: url(/images/bryn.png)
+}
+
+
+/* Collections */
+.hover-container {
+  background-size: cover;
+  background-position: center;
+}
+
+.hover-overlay {
+  position: relative;
+  padding-bottom: 100%;
+  color: rgba(255, 255, 255, 0);
+  position: relative;
+  /* you only need to use relative + absolute if you want to determine the exact aspect ratio of the container */
+  transition: all 0.3s;
+}
+
+.hover-overlay:hover {
+  background-color: rgba(60, 60, 60, 0.7);
+  color: white;
+}
+
+.hover-inner {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.hover-inner p {
+  margin-bottom: 0;
+}
+
+
+/* Banner */
+.banner {
+  background-image: url('/images/heading.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 50vh;
+  position: relative;
 }
