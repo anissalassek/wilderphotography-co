@@ -1,0 +1,73 @@
+---
+layout: default
+title: Weddings
+gallery:
+  - column-size: col-6
+    aspect-ratio: portrait
+    background_image: /images/Wedding/w-por-1.jpg
+  - column-size: col-6
+    aspect-ratio: portrait
+    background_image: /images/Wedding/w-por-2.jpg
+  - column-size: col-12
+    aspect-ratio: landscape
+    background_image: /images/Wedding/w-lan-5.jpg  
+  - column-size: col-12
+    aspect-ratio: landscape
+    background_image: /images/Wedding/w-lan-1.jpg
+  - column-size: col-6_sm-12
+    aspect-ratio: portrait
+    background_image: /images/Wedding/w-por-3.jpg
+  - column-size: col-6
+    aspect-ratio: portrait
+    background_image: /images/Wedding/w-por-4.jpg
+  - column-size: col-12
+    aspect-ratio: portrait
+    background_image: /images/Wedding/w-por-6.jpg   
+  - column-size: col-6
+    aspect-ratio: portrait
+    background_image: /images/Wedding/w-por-5.jpg  
+  - column-size: col-6
+    aspect-ratio: portrait
+    background_image: /images/Wedding/w-por-7.jpg   
+  - column-size: col-12_sm-12
+    aspect-ratio: landscape
+    background_image: /images/Wedding/W-lan-4.jpg
+---
+
+
+<!--- banner -->
+<section class="wedding-banner flex items-center justify-center" style="background-image:url('/images/Wedding/w-lan-4.jpg')">
+  <div class="md:w-[50%] bg-slate-200 p-8 ">
+      <div class="padded padded-t overlay-c overlay-w centered div-frame">
+          <h2>Weddings</h2>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!--description -->
+<p class="centered padded">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum officia hic eveniet dolores necessitatibus laboriosam commodi adipisci? Dolorum exercitationem aperiam, odio reprehenderit explicabo, labore obcaecati quisquam odit iste ipsum beatae.</p>
+
+<!-- gallery -->
+
+<div class="gallery grid-middle padded">
+    {% for item in page.gallery %}
+
+    <div class="{{item.column-size}}">
+      <div class="bg-image {{item.aspect-ratio}}"
+           style="background-image: url('{{item.background_image}}');">
+      </div>
+    </div>
+
+    {% endfor %}
+</div>
+
+<!--Contact Section -->
+<section class="grid b-bg centered padded">
+    <div class="col-12">
+        <h2>Like what you see? 
+          <a href="#" class="button"> Let's Talk </a>
+        </h2>
+    </div>
+</section>
