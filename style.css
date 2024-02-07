@@ -1,6 +1,8 @@
 /* colors
   green: #6B7E6B;
   black: #3B3B3B
+  font-family: 'Bodoni Moda', serif;
+
 */
 
 
@@ -16,15 +18,17 @@
 .left     {  text-align: left;     }
 .right    {  text-align: right;    }
 .centered {  text-align: center;   }
+.v-middle {  vertical-align: middle;}
 
 
 .padded   {  padding: 5%;    }
 .padded-05 {  padding: 0.5rem;  }
 .padded-1 {  padding: 1rem;  }
 .padded-2 {  padding: 2rem;  }
-.padded-t {  padding-top: 4rem; }
-.padded-b {  padding-top: 2rem; }
-.padded-r {  padding-right: 1rem;}
+.padded-t {  padding-top: 6rem; }
+.padded-b {  padding-bottom: 7rem; }
+.padded-r {  padding-right: 10rem; }
+.padded-l {  padding-left: 1rem;  }
 
 .banner-top { padding-top: 21rem;}
 
@@ -36,11 +40,13 @@
 .tall-20  {  min-height: 20vh;   }
 .tall-40  {  min-height: 40vh;   }
 .tall-50  {  min-height: 50vh;   }
+.tall-60  {  min-height: 60vh;   }
+.tall-70  {  min-height: 70vh;   }
 .tall-100 {  min-height: 100vh;  }
 
 .dark-bg      {  background-color: #3B3B3B;     }
 .green-bg     {  background-color: #6B7E6B;}
-.light-bg     {  background-color: #F5F5F5;  }
+.light-bg     {  background-color: #ffffff;  }
 .featured-bg  {  background-color: #ffeaa7;             }
 
 .light-text   { color: white; }
@@ -51,26 +57,29 @@
 
   /* General typography */
 
-  h2, h3, h4 {
+  h1, h2, h3, h4 {
     font-family: 'Wildflower Blossom';
     src: url('wildflowerblossomitalicttf-webfont.woff2') format('woff2'),
          url('wildflowerblossomitalicttf-webfont.woff') format('woff');
     font-weight: normal;
     font-style: italic;
     letter-spacing: .08em;
+    text-transform: uppercase;
   }
   
   h2, h3, h4, h5, h6 {
   line-height: 1;
   margin-bottom: 0.8rem;
+  text-transform: uppercase;
   }
 
+  h1  { font-size: 4rem;}
   h2  { font-size: 3rem;  }
   h3  { font-size: 1.8rem;  }
   h4  { font-size: 1.4rem;  }
   p   { font-size: 1rem;  
-        font-family: "ltc-bodoni-175", serif;
-        font-weight: 400;
+        font-family: 'Bodoni Moda', serif;
+        font-weight: 500;
         font-style: normal;}
 
   p, ul {
@@ -104,21 +113,50 @@
     font-size: 1.5rem;
     font-family: 'Wildflower Blossom';
     text-transform: uppercase;
+    padding:3% 5%;
   }
 
   a{
     text-decoration: none;
     color: inherit;
+    font-family: 'Bodoni Moda', serif;
   }
+
+
+  nav img {
+    max-width: 15%;
+    max-height: 15%;
+  }
+
+  .nav-pos {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  
 
   a:hover {
     color: #6B7E6B;
   }
 
+
+/* Colors */
+.b-bg {
+  background-color: #E9E5E2;
+}
+
+.g-bg {
+  background-color: #678872;
+}
+
+
 /* Aspect Ratio  */
 .portrait-tall { padding-bottom: 175%; }
 .portrait { padding-bottom: 125%; }
-.square { padding-bottom: 100%; }
+.square { 
+  height: 0;
+  padding-bottom: 100%; }
 .landscape { padding-bottom: 66%; }
 .landscape-wide { padding-bottom: 56%; }
 
@@ -129,12 +167,17 @@
 .bg-pos-r { background-position: right; }
 
 
+
 /* Header style */
 
 header {
-  padding: 1% 5%;
+  padding: 5% 5%;
 }
 
+
+.p-heading {
+  padding-top: 20rem;
+}
 
 /* footer style */
 
@@ -160,38 +203,134 @@ header {
 
 .bg-logo {
   background-image: url(/images/logo.PNG);
-  background-size: 20%;
-}
-
-.bg-flower {
-  background-image: url(/images/flower.PNG);
-  background-size: 20%;
+  background-size: 70%;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.bg-family {
-  background-image: url(/images/family.jpg);
+.bg-flower {
+  background-image: url(/images/flower.png);
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.bg-couple {
-  background-image: url(/images/couple.jpg);
+.bg-w-banner {
+  background-image: url(/images/Wedding/W-4.jpg);
 }
 
-.bg-lifestyle {
-  background-image: url(/images/lifestyle-2.jpg);
+.bg-w-banner-2 {
+  background-image: url(/images/Wedding/W-5.jpg);
 }
 
-.bg-wedding {
-  background-image: url(/images/wedding.jpg);
+.bg-kw {
+max-width: 600px;
+max-height: 802px;
 }
 
-.bg-bryn {
-  background-image: url(/images/bryn.png)
+.bg-aboutme {
+  background-repeat: no-repeat;
+  background-position: center;
+  position:relative;
+  z-index: 0;
+}
+
+.b-pos {
+  background-color: #E9E5E2;
+  position: relative;
+  z-index: -1;
 }
 
 
-/* Collections */
+
+
+/* Banner */
+              
+.banner,
+.banner-with-header {
+  background-image: url('/images/Couples/c-lan-28.jpg');
+  background-size: cover;
+  background-position: top;
+  min-height: 100vh;
+}
+
+.fixed-bg {
+  background-attachment: fixed;
+}
+
+.banner p {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+
+.divider {
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid;  
+}
+
+
+.banner-inner {
+  padding-top: 20%;
+}
+x
+
+.bg-overlay {
+  position: relative;
+}
+
+.bg-overlay::before {
+  content: ""; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.bg-overlay > * {
+  position: relative;
+}
+
+/* description banner */
+
+.ban-pos {
+  position: static;
+}
+
+.image-1 {
+  position: absolute;
+  background-size: 50%;
+  max-width: 50%;
+  max-height: 50%;
+  top: 15%;
+  right: 18%;
+  margin: 5%;
+  z-index: 2;
+}
+
+.image-2 {
+  right: -15rem;
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.leaves {
+  position: absolute;
+  right: 25%;
+  top: 5%;
+  max-width: 90%;
+  max-height: 90%;
+  z-index: 1;
+}
+
+
+
+
+
+
+/* collections section */
 .hover-container {
   background-size: cover;
   background-position: center;
@@ -223,12 +362,301 @@ header {
   margin-bottom: 0;
 }
 
-
-/* Banner */
-.banner {
-  background-image: url('/images/heading.jpg');
-  background-size: cover;
-  background-position: center;
-  min-height: 50vh;
-  position: relative;
+.line {
+  border: none;
+  display: inline-block; 
+  width: 70rem;
+  text-align: right; 
+  border-bottom: 1px solid;      
 }
+
+/* kind words */ 
+
+.kw-pos {
+  z-index: -2;
+  position: absolute;
+  border: none;
+  right: 0rem;
+} 
+
+.img-pos {
+  position: relative;
+  z-index: 0;
+}
+
+.kw-padded {
+  padding-left: 7rem;
+}
+
+.kw-leaves {
+  position: absolute;
+  right: 40rem;
+  top: -3rem;
+  max-width: 500px;
+  max-height: 500px;
+  z-index: 1;
+  background-repeat: no-repeat;
+}
+
+.quote { font-size: 6rem;}
+
+
+.g-pos {
+  background-color: #678872;
+  position: relative;
+  z-index: -1;
+}
+
+
+/* Button */
+
+
+.button,
+.button-solid,
+.button-inverted {
+  text-decoration: none;
+  color: black;
+  background-color: #E9E5E2;
+  padding: 1rem 2rem; /* Adjust the padding as needed */
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin: 2%;
+  font-family: ;
+}
+
+.button-green {
+  background-color: #678872;
+  color:white;
+  margin: 0;
+  z-index: 11000;
+}
+
+.button-black {
+  background-color: black;
+  color:white;
+  margin: 0;
+  z-index: 11000;
+}
+
+.button:hover {
+  background-color: #678872;
+  color: white;
+}
+
+.question {
+  background-size: 50%
+}
+
+/* about me */
+
+
+.image-3 {
+  position: relative;
+  right: -1rem;
+  max-width: 400px;
+  max-height: 400px;
+  z-index: 200;
+}
+
+.am-leaves {
+  position: absolute;
+  right: 60%;
+  top: 0%;
+  max-width:110%;
+  max-height: 110%;
+  z-index: 1;
+}
+
+.am-w {
+  position: absolute;
+  right: 3%;
+  top: -10%;
+  max-width: 20%;
+  max-height: 20%;
+  z-index: 300;
+}
+
+
+/* footer */
+footer a {
+  font-size: 1.2rem;
+}
+
+/*position for container - use if using absolute on another element */
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+
+/* border box for the banner */
+
+.banner-w {
+  position: absolute;
+  right: 2%;
+  top: 1%;
+  max-width: 20%;
+  max-height: 20%;
+  z-index: 300;
+}
+
+ 
+/* frame for images - like collection */ 
+.image-frame {
+  border: 1px solid black;
+  padding: 5px;
+  background-clip: content-box;
+}
+
+
+/* contact box overlay & border */
+.overlay-c {
+position: absolute; 
+background: rgba(255, 255, 255, 0.5);
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.overlay-1 {
+left: 25%;
+bottom: 50%;
+width: 50%;
+padding: 1rem;
+}
+
+.div-frame {
+  outline: 1px solid black;
+  padding: 10px;
+  outline-offset: 10px;
+}
+
+
+
+/* welcome banner */
+.w-bg-1 {
+  position: absolute;
+  max-width: 50%;
+  max-height: 50%;
+  top: 30%;
+  right: 34%;
+  z-index: 5000;
+}
+
+.w-bg-2 {
+  position: absolute;
+  max-width: 90%;
+  max-height: 90%;
+  top: 0%;
+  right: 42%;
+  z-index: 2000;
+}
+
+.w-bg-3 {
+  position: absolute;
+  max-width: 55%;
+  max-height: 55%;
+  top: 5%;
+  right: 57%;
+  z-index: 3000;
+}
+
+.w-leaves {
+    position: absolute;
+    right: 35%;
+    top: -7%;
+    max-width: 110%;
+    max-height: 110%;
+    z-index: 1;
+  }
+
+  .w-w {
+    position: absolute;
+    right: 60%;
+    top: 65%;
+    max-width: 20%;
+    max-height: 20%;
+    z-index: 10000;
+  }
+
+
+/* Header - collections page */
+.c-bg-1 {
+  position: absolute;
+  max-width: 90%;
+  max-height: 90%;
+  top: 5%;
+  right: 15%;
+  z-index: 2;
+}
+
+.c-bg-2 {
+  position: absolute;
+  max-width: 60%;
+  max-height: 60%;
+  top: 20%;
+  right: 30%;
+  z-index: 3;
+}
+
+
+.c-leaves {
+    position: absolute;
+    right: 25%;
+    top: -7%;
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 1;
+  }
+
+  .c-w {
+    position: absolute;
+    right: -190%;
+    top: -25%;
+    max-width: 20%;
+    max-height: 20%;
+    z-index: 10000;
+  }
+
+
+/* Services */
+.services-overlay {
+  position: relative;
+  padding-bottom: 100%;
+}
+
+
+.inner {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+}
+
+/* Gallery Page Banner*/
+
+
+  .wedding-banner {
+    background-image: url('/images/Wedding/w-lan-8.jpg');
+    min-height: 90vh;
+    background-size: cover;
+    background-position: top;
+  }
+
+  .overlay-w {
+    left: 36%;
+    bottom: 50%;
+    width: 25%;
+    padding: 1rem;
+    }
+
+/* gallery */
+.gallery [class*="col-"] {
+  padding: 0.5%;
+}
+
+.bg-img-1 {
+  background-image: url('https://source.unsplash.com/U3aF7hgUSrk');
+}
+
+
