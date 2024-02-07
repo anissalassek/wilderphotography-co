@@ -9,8 +9,12 @@
   <link rel="stylesheet" href="https://use.typekit.net/tyk6oyh.css">
 
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&display=swap" rel="stylesheet">
 
-  <!-- gridlex -->
+
+<!-- gridlex -->
     
     <title>Wilder Photography Co</title>
 
@@ -26,39 +30,56 @@
 </head>
 
 <body>
-    <!--- Header -->
- 
-    <header class="grid">
-       <div class="col-12 centered">
-          <a href="/">
-            <div class="logo p-4 centered bg-logo bg-image tall-20"></div>
-          </a>
-          <nav class="col-12 centered padded-1">
-            <a href="#" class="nav-padded"> Home </a>
-            <a href="#" class="nav-padded"> Collections </a>
-            <a href="#" class="nav-padded"> Contact </a>
-          </nav>
+  <!---Nav Bar -->
+      <nav class="centered nav-pos">
+        <!-- Left Links -->
+        <a href="/index.html">Home</a>
+        <a href="/collections.html">Collections</a>
+
+        <!-- Logo in the Center -->
+        <a href="/index.html">
+            <img src="/images/white-logo.PNG" alt="Wilder Photography Co.">
+        </a>
+
+        <!-- Right Links -->
+        <a href="/services.html" class="right">Services</a>
+        <a href="/contact.html" class="right">Contact</a>
         </div>
-    </header>
+    </nav>
 
 
     {{content}}
 
 
-<!---    footer    -->
-<footer class=" padded green-bg">
-    <section class="grid">
-      <div class="col-4">
-        <h3>Wilder Photography Co</h3>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae eos vero recusandae sint voluptate velit.</p>
-      </div>
-      <div class="col-4 bg-flower"></div>
-      <div class="col-4">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora magni illo earum, animi labore laborum maiores repudiandae accusamus distinctio eos nisi, corporis ea quod eveniet reprehenderit facilis magnam ex minus?</p>
-      </div>
-    </section>
-</footer>
+  <footer class="grid-middle centered padded-2">
+    <div class="col-4 left">
+      <h3>Wilder Photography Co.</h3>
+      <p>COPYRIGHT © Wilder Photography Co.</p>
+      <p>Site design & code by Anissa Lassek</p>
+    </div>
+    <div class="col-4 bg-flower tall-20 centered">
+
+    </div>
+    <div class="col-4 right">
+        <nav>
+          <a href="index.html">Home </a> |
+          <a href="/collections.html">Collections </a> |
+          <a href="/services.html">Services </a> |
+          <a href="/contact.html">Contact</a>
+        </nav>
+    </div>
+  </footer>
 
 
-</body>
-</html>
+
+
+<!--JS Query-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js" integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!--- our custom JavaScript file-->
+    <script src="/scripts.js"></script>
+
+
+  </body>
+  </html>
