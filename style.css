@@ -274,7 +274,7 @@ max-height: 802px;
 .banner-inner {
   padding-top: 20%;
 }
-x
+
 
 .bg-overlay {
   position: relative;
@@ -661,3 +661,56 @@ padding: 1rem;
 }
 
 
+
+
+
+
+/* General CSS Styles (apply everywhere) */ 
+
+.show-xs, 
+.show-sm,
+.show-md {
+	display: none;
+}
+
+/* --------------- MD Media Query (64em / 1024px) --------------- */ 
+/* Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+@media (max-width: 64em) {
+	.show-md { display: block; }
+	.hide-md { display: none; }
+
+  body { border: 5px solid blue;}
+}
+
+/* --------------- SM Media Query (48em / 768px) --------------- */ 
+/* Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */ 
+
+@media (max-width: 48em) {
+	 .show-sm { display: block; }
+	 .hide-sm { display: none; }
+
+   body { border: 5px solid green;}
+}
+
+/* --------------- XS Media Query (36em / 576px) --------------- */ 
+/* Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+@media (max-width: 36em) {
+		.show-xs { display: block; }
+		.hide-xs { display: none; }
+
+    body { border: 5px solid red;}
+
+    .xs-text-center { text-align: center; }
+    .xs-text-left { text-align: left; }
+    .xs-text-right { text-align: right; }
+
+    h4 { font-size: 1rem; }
+    .quote { font-size: 4rem;}
+    p { font-size: 1rem;} 
+    h1 { font-size: 1.2rem;}
+    h3 { font-size: 1.5rem; }
+
+    .sm-w-pos { right: 28%;}
+}
