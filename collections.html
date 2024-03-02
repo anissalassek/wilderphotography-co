@@ -1,6 +1,15 @@
 ---
 layout: light
-title: Collections
+title: Collections  
+collections:
+-   title: Weddings
+    featured_image: /images/Wedding/w-por-6.jpg
+-   title: Families
+    featured_image: /images/Families/f-por-16.jpg
+-   title: Couples
+    featured_image: /images/Couples/c-por-10.jpg
+-   title: Lifestyle
+    featured_image: /images/Lifestyle/l-por-10.jpg
 ---
 
 <!---Collections Header -->
@@ -24,73 +33,28 @@ title: Collections
 
 <!--Collections -->
 
+
+<hr class="divider">
 <section class="padded-1">
-<div class="centered">
-  <h3>Take a look at my work</h3>
+  <div class="centered">
+    <h3 class="editable">Take a look at my work</h3>
   </div>
 </section>
 <section class="p-5p centered">
-    <div class="grid md:grid-cols-3 p-4 padded-2">
-      <a href="/weddings.html">
-      <div class="col-3_sm-12 p-4">
-        <div class="hover-container image-frame" style="background-image:url('/images/coll-wedding.png')">
-          <div class="hover-overlay">
-            <div class="hover-inner">
-              </div>
-              <div></div>
-            </div>
-          </div>
-        </a>
+  <div class="grid md:grid-cols-3 p-4 padded-2">
+    {% for item in page.collections %}
+    <div class="col-3_sm-12 p-4">
+      <div class="hover-container image-frame" style="background-image:url('{{item.featured_image}}')">
+        <div class="hover-overlay">
+          <div class="hover-inner"></div>
         </div>
-        <div class="col-3_sm-12 p-4">
-          <a href="/families.html">
-          <div class="hover-container image-frame" style="background-image:url('/images/coll-family.png')">
-            <div class="hover-overlay">
-              <div class="hover-inner">
-              </div>
-            </div>
-          </div>
-        </a>
-        </div>
-        <div class="col-3_sm-12 p-4">
-          <a href="/couples.html">
-          <div class="hover-container image-frame" style="background-image:url('/images/coll-couples.png')">
-            <div class="hover-overlay">
-              <div class="hover-inner">
-              </div>
-            </div>
-          </div>
-          </a>
-        </div>
-        <div class="col-3_sm-12 p-4">
-          <a href="/lifestyle.html">
-            <div class="hover-container image-frame" style="background-image:url('/images/coll-lifestyle.png')">
-              <div class="hover-overlay">
-                <div class="hover-inner">
-                </div>
-              </div>
-            </div>
-            </a>
-          </div>
-      
-
-        <div class="col-3">
-          <a href="/weddings.html>"><h3> ·Weddings·</h3>
-          </a>
-        </div>
-        <div class="col-3">
-          <a href="/families.html"><h3> ·Families·</h3>
-          </a>
-        </div>
-        <div class="col-3">
-          <a href="/couples.html"><h3> ·Couples·</h3>
-          </a>
-        </div>
-        <div class="col-3">
-          <a href="/lifestyle.html"><h3> ·Lifestyle·</h3>
-          </a>
-        </div>
-      </section>
+      </div>
+      <!-- Description -->
+      <div class="item-title">{{item.title}}</div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
 
 <!-- Kind words -->
 
@@ -111,17 +75,35 @@ title: Collections
 
 <!----Contact Section -->
 
-<section class="grid-middle-spaceAround padded b-pos">
-    <div class="col-4 bg-aboutme tall-50 container hide-md">
+<section class="grid-middle padded b-pos">
+    <div class="col-6 bg-aboutme tall-50 container hide-md">
 
         <img src="/images/W.png" class="c-w "/>
         <img src="/images/girl.png" class="image-frame image-3 "/>
         <img src="/images/aboutme-leaves.png" class="am-leaves "/>
       </div>
     <div class="col-6_md-12 centered">
-      <h2>Like what you see? 
-        <p><a href="#" class="button button-black"> Let's Talk </a><p>
-      </h2>
+      <div class="image-frame">
+        <h2>I would love to speak to you!</h2>
+        <div class="col-6_xs-12 xs-text-center forms">
+          <form name="contact" method="POST" data-netlify="true">
+              <p>
+                <label>Your Name: <input type="text" name="name" /></label>
+              </p>
+              <p>
+                <label>Your Email: <input type="email" name="email" /></label>
+              </p>
+              <p>
+                <label>Your Phone Number (optional): <input type="telephone" name="telephone" /></label>
+              </p>
+              <p>
+                <label>Message: <textarea name="message"></textarea></label>
+              </p>
+              <p>
+                <button type="submit" class="button">Send</button>
+              </p>
+            </form>
+    </div>
     </div>
    
   </section>

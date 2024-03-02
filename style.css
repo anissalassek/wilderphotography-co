@@ -508,6 +508,7 @@ footer a {
   border: 1px solid black;
   padding: 5px;
   background-clip: content-box;
+  z-index: 2000;
 }
 
 
@@ -661,7 +662,38 @@ padding: 1rem;
 }
 
 
+/* Responsive overlapping banner */
+.image-container {
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+  position: relative;
+  max-width: 800px; /* Adjust max-width as needed */
+  margin: 0 auto; /* Center the container */
+}
 
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Positioning for large screens */
+.image-container img:nth-child(1) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: 30%; /* Adjust width as needed */
+}
+
+.image-container img:nth-child(2) {
+  z-index: 1; /* Ensure center image is on top */
+}
+
+.image-container img:nth-child(3) {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-width: 30%; /* Adjust width as needed */
+}
 
 
 
