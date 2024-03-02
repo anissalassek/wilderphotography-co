@@ -2,33 +2,36 @@
 layout: light
 title: Collections  
 collections:
--   title: Weddings
-    featured_image: /images/Wedding/w-por-6.jpg
--   title: Families
-    featured_image: /images/Families/f-por-16.jpg
--   title: Couples
-    featured_image: /images/Couples/c-por-10.jpg
--   title: Lifestyle
-    featured_image: /images/Lifestyle/l-por-10.jpg
+-   link: /weddings.html
+    featured_image: /images/coll-wedding.png
+    title: Weddings
+-   link: /families.html
+    featured_image: /images/coll-family.png
+    title: Families
+-   link: /couples.html
+    featured_image: /images/coll-couples.png
+    title: Couples
+-   link: /lifestyle.html
+    featured_image: /images/coll-lifestyle.png
+    title: Lifestyle
 ---
 
 <!---Collections Header -->
 <div class="padded-1 b-bg"></div>
 
-<section class="grid-middle2 padded b-bg container tall-60">
-    <div class="col-1 hide-md"></div>
-    <div class="col-5_md-6 centered">
-        <h3 class="">You bring the love, I'll do the rest</h3>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ratione asperiores porro distinctio laborum labore perspiciatis consectetur delectus rerum quam, dolorem, sunt, nulla velit placeat! Amet neque vero molestiae quod?</p>
+<section class="grid-middle padded b-bg">
+  <div class="col-1"></div>
+  <div class="col-4">
+      <h3 class="">You bring the love, I'll do the rest!</h3>
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ratione asperiores porro distinctio laborum labore perspiciatis consectetur delectus rerum quam, dolorem, sunt, nulla velit placeat! Amet neque vero molestiae quod?</p>
+  </div>
+  <div class="col-1"></div>
+    <div class="col-6 image-container-collections">
+      <img src="/images/Couples/c-por-11.jpg" alt="Left Image" class="image-frame">
+      <img src="images/Wedding/w-por-6.jpg" alt="Center Image">
+      <img src="/images/aboutme-leaves.png" alt="Leaves"/>
     </div>
-    <div class="show-md col-6 tall-50" style="background-image: url('/images/Families/f-por-21.jpg');"></div>
-    <div class="hide-md">
-        <div class=""></div>
-        <img src="/images/Families/f-por-21.jpg" class="c-bg-1"/>
-        <img src="/images/Families/f-por-20.jpg" class="c-bg-2 image-frame"/>
-        <img src="/images/aboutme-leaves.png" class="c-leaves"/>
-    </div>
-</section>
+  </section>
 
 
 <!--Collections -->
@@ -50,7 +53,7 @@ collections:
         </div>
       </div>
       <!-- Description -->
-      <div class="item-title">{{item.title}}</div>
+      <div class="item-title caps">{{item.title}}</div>
     </div>
     {% endfor %}
   </div>
@@ -73,37 +76,35 @@ collections:
 </section>
 
 
-<!----Contact Section -->
 
-<section class="grid-middle padded b-pos">
-    <div class="col-6 bg-aboutme tall-50 container hide-md">
+<!--- Contact Section -->
 
-        <img src="/images/W.png" class="c-w "/>
-        <img src="/images/girl.png" class="image-frame image-3 "/>
-        <img src="/images/aboutme-leaves.png" class="am-leaves "/>
-      </div>
+  <section class="grid-middle padded b-bg">
+  
+    <div class="col-6 centered">
+      <img src="/images/girl.png" alt="center image" class="image-frame" style="max-width: 60%;">
+    </div>
+
     <div class="col-6_md-12 centered">
-      <div class="image-frame">
-        <h2>I would love to speak to you!</h2>
-        <div class="col-6_xs-12 xs-text-center forms">
-          <form name="contact" method="POST" data-netlify="true">
-              <p>
-                <label>Your Name: <input type="text" name="name" /></label>
-              </p>
-              <p>
-                <label>Your Email: <input type="email" name="email" /></label>
-              </p>
-              <p>
-                <label>Your Phone Number (optional): <input type="telephone" name="telephone" /></label>
-              </p>
-              <p>
-                <label>Message: <textarea name="message"></textarea></label>
-              </p>
-              <p>
-                <button type="submit" class="button">Send</button>
-              </p>
-            </form>
-    </div>
-    </div>
-   
+      <h2>I would love to speak to you!</h2>
+      <div class="col-6_xs-12 xs-text-center forms">
+        <form name="contact" method="POST" data-netlify="true">
+            <p>
+              <label>Your Name: <input type="text" name="name" /></label>
+            </p>
+            <p>
+              <label>Your Email: <input type="email" name="email" /></label>
+            </p>
+            <p>
+              <label>Your Phone Number (optional): <input type="telephone" name="telephone" /></label>
+            </p>
+            <p>
+              <label>Message: <textarea name="message"></textarea></label>
+            </p>
+            <p>
+              <button type="submit" class="button">Send</button>
+            </p>
+          </form>
+  </div>
+  </div>
   </section>
