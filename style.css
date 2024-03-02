@@ -785,6 +785,15 @@ padding: 1rem;
 	 .hide-sm { display: none; }
 
    body { border: 5px solid green;}
+
+   .sm-text-center { text-align: center; }
+
+   .sm-imageframe {
+    border: 1px solid black;
+    padding: 5px;
+    background-clip: content-box;
+    z-index: 2000;
+   }
 }
 
 /* --------------- XS Media Query (36em / 576px) --------------- */ 
@@ -802,9 +811,9 @@ padding: 1rem;
 
     h4 { font-size: 1rem; }
     .quote { font-size: 4rem;}
-    p { font-size: 1rem;} 
-    h1 { font-size: 1.2rem;}
-    h3 { font-size: 1.5rem; }
+    p { font-size: .8rem;} 
+    h1 { font-size: 1.5rem;}
+    h3 { font-size: 1.2rem; }
 
     .sm-w-pos { right: 28%;}
 }

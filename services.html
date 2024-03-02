@@ -1,28 +1,45 @@
 ---
 layout: light
 title: Services 
+collections:
+-   link: /weddings.html
+    featured_image: /images/coll-wedding.png
+    title: Weddings
+    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ea quia doloremque. 
+-   link: /families.html
+    featured_image: /images/coll-family.png
+    title: Families
+    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ea quia doloremque. 
+-   link: /couples.html
+    featured_image: /images/coll-couples.png
+    title: Couples
+    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ea quia doloremque. 
+-   link: /lifestyle.html
+    featured_image: /images/coll-lifestyle.png
+    title: Lifestyle
+    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ea quia doloremque. 
 ---
 
 <!---Collections Header -->
 <div class="padded-1 b-bg"></div>
 
-<section class="grid-middle2 padded b-bg container tall-60">
-    <div class="col-1"></div>
-    <div class="col-5 centered">
-        <h1 class="">Work with me</h1>
+<section class="grid-middle padded b-bg sm-text-center">
+  <div class="col-1 hide-sm"></div>
+  <div class="col-4_sm-12">
+      <h1 class="">My Services</h1>
+      
+  </div>
+  <div class="col-1 hide-sm"></div>
+    <div class="col-6_sm-12 image-container-collections">
+      <img src="/images/Couples/c-por-11.jpg" alt="Left Image" class="image-frame hide-sm">
+      <img src="images/Wedding/w-por-6.jpg" alt="Center Image" class="sm-imageframe">
+      <img src="/images/aboutme-leaves.png" alt="Leaves" class="hide-sm"/>
     </div>
-    <div class="">
-        <div class=""></div>
-        <img src="/images/Couples/c-por-47.jpg" class="c-bg-1"/>
-        <img src="/images/Couples/c-por-22.jpg" class="c-bg-2 image-frame"/>
-        <img src="/images/aboutme-leaves.png" class="c-leaves"/>
-    </div>
-</section>
-<hr class="divider">
+  </section>
 
 <!--- promise -->
 
-<section class="grid centered padded">
+<section class="grid centered padded b-bg">
     <div class="col-2"></div>
     <div class="col-8">
         <h3>My promise to you</h3>
@@ -33,73 +50,31 @@ title: Services
 
 <!--services-->
 <hr class="divider">
-<section class="padded-1">
-<div class="centered">
-  <h3>Services</h3>
+<section class="p-5p centered">
+  <div class="grid md:grid-cols-3 p-4 padded-2">
+    {% for item in page.collections %}
+    <div class="col-3_sm-6 p-4">
+      <div class="hover-container image-frame" style="background-image:url('{{item.featured_image}}')">
+        <div class="hover-overlay">
+          <div class="hover-inner"></div>
+        </div>
+      </div>
+      <!-- Description -->
+      <div class="item-title">
+        <h4 class="caps">{{item.title}}</h4>
+        <p>{{item.description}}</p>
+      </div>
+    </div>
+    {% endfor %}
   </div>
 </section>
-
-<section class="p-5p centered">
-    <div class="grid md:grid-cols-3 p-4 padded-2">
-      <div class="col-3_sm-12 p-4">
-        <div class="hover-container image-frame" style="background-image:url('/images/coll-wedding.png')">
-          <div class="services-overlay">
-            <div class="inner">
-              </div>
-              <div></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-3_sm-12 p-4">
-          <div class="hover-container image-frame" style="background-image:url('/images/coll-family.png')">
-            <div class="services-overlay">
-              <div class="inner">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-3_sm-12 p-4">
-          <div class="hover-container image-frame" style="background-image:url('/images/coll-couples.png')">
-            <div class="services-overlay">
-              <div class="inner">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-3_sm-12 p-4">
-            <div class="hover-container image-frame" style="background-image:url('/images/coll-lifestyle.png')">
-              <div class="services-overlay">
-                <div class="inner">
-                </div>
-              </div>
-            </div>
-          </div>
       
-        <!--description-->
-        <div class="col-3">
-            <h3> ·Weddings·</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-
-        <div class="col-3">
-            <h3>·Families·</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div class="col-3">
-            <h3>·Couples·</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-        </div>
-        <div class="col-3">
-            <h3>·Lifestyle·</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-      </section>
-
+        
 <!--FAQ-->
 
 <section class="grid-middle padded g-bg light-text">
     <div class="col-4">
-        <h1>Frequently Asked Questions</h1>
+        <h2>Frequently Asked Questions</h2>
     </div>
     <div class="col-8 right">
         <h3>Question</h3>

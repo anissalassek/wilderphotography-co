@@ -19,17 +19,17 @@ collections:
 <!---Collections Header -->
 <div class="padded-1 b-bg"></div>
 
-<section class="grid-middle padded b-bg">
-  <div class="col-1"></div>
-  <div class="col-4">
+<section class="grid-middle padded b-bg sm-text-center">
+  <div class="col-1 hide-sm"></div>
+  <div class="col-4_sm-12">
       <h3 class="">You bring the love, I'll do the rest!</h3>
       <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ratione asperiores porro distinctio laborum labore perspiciatis consectetur delectus rerum quam, dolorem, sunt, nulla velit placeat! Amet neque vero molestiae quod?</p>
   </div>
-  <div class="col-1"></div>
-    <div class="col-6 image-container-collections">
-      <img src="/images/Couples/c-por-11.jpg" alt="Left Image" class="image-frame">
+  <div class="col-1 hide-sm"></div>
+    <div class="col-6_sm-12 image-container-collections">
+      <img src="/images/Couples/c-por-11.jpg" alt="Left Image" class="image-frame hide-sm">
       <img src="images/Wedding/w-por-6.jpg" alt="Center Image">
-      <img src="/images/aboutme-leaves.png" alt="Leaves"/>
+      <img src="/images/aboutme-leaves.png" alt="Leaves" class="hide-sm"/>
     </div>
   </section>
 
@@ -46,7 +46,7 @@ collections:
 <section class="p-5p centered">
   <div class="grid md:grid-cols-3 p-4 padded-2">
     {% for item in page.collections %}
-    <div class="col-3_sm-12 p-4">
+    <div class="col-3_sm-6 p-4">
       <div class="hover-container image-frame" style="background-image:url('{{item.featured_image}}')">
         <div class="hover-overlay">
           <div class="hover-inner"></div>
@@ -85,7 +85,7 @@ collections:
       <img src="/images/girl.png" alt="center image" class="image-frame" style="max-width: 60%;">
     </div>
 
-    <div class="col-6_md-12 centered">
+    <div class="col-6 centered">
       <h2>I would love to speak to you!</h2>
       <div class="col-6_xs-12 xs-text-center forms">
         <form name="contact" method="POST" data-netlify="true">
