@@ -29,22 +29,41 @@
 </head>
 
 <body>
-  <!---Nav Bar -->
-      <nav class="centered b-bg">
-        <!-- Left Links -->
-        <a href="/index.html">Home</a>
-        <a href="/collections.html">Collections</a>
+<!---- Hamburger for mobile  -->     
+<div>
+  <div class="col-1 show-sm">
+      <div class="menu-buttons">
+          <div class="hamburger-button right active">
+              <i class=>☰</i>
+          </div>
+      </div>
+  </div>
+</div>
 
-        <!-- Logo in the Center -->
-        <a href="/index.html">
-            <img src="/images/white-logo.PNG" alt="Wilder Photography Co.">
-        </a>
+<nav class="mobile-menu padded bg-red">
+  <a href="/index.html">Home</a>
+  <a href="/collections.html">Collections</a>
+  <a href="/services.html">Services</a>
+  <a href="/contact.html">Contact</a>
+</nav>
 
-        <!-- Right Links -->
-        <a href="/services.html" class="right">Services</a>
-        <a href="/contact.html" class="right">Contact</a>
-        </div>
-    </nav>
+
+<!---Nav Bar -->
+    <nav class="centered nav-pos hide-sm">
+      <!-- Left Links -->
+      <a href="/index.html">Home</a>
+      <a href="/collections.html">Collections</a>
+
+      <!-- Logo in the Center -->
+      <a href="/index.html">
+          <img src="/images/white-logo.PNG" alt="Wilder Photography Co.">
+      </a>
+
+      <!-- Right Links -->
+      <a href="/services.html" class="right">Services</a>
+      <a href="/contact.html" class="right">Contact</a>
+      </div>
+  </nav>
 
 
     {{content}}

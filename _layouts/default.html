@@ -13,6 +13,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&display=swap" rel="stylesheet">
 
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!---- Animate on scroll -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
 <!-- gridlex -->
     
@@ -30,8 +36,26 @@
 </head>
 
 <body>
+  <!---- Hamburger for mobile  -->     
+  <!-- Mobile Menu -->
+<div class="topnav show-sm">
+  <a href="#home" class="active">Wilder Photography Co.</a>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <a href="/index.html">Home</a>
+    <a href="/collections.html">Collections</a>
+    <a href="/services.html">Services</a>
+    <a href="/Contact.html">Contact</a>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
   <!---Nav Bar -->
-      <nav class="centered nav-pos">
+      <nav class="centered nav-pos hide-sm">
         <!-- Left Links -->
         <a href="/index.html">Home</a>
         <a href="/collections.html">Collections</a>
@@ -70,13 +94,8 @@
         </nav>
     </div>
   </footer>
-
-
-
-
-<!--JS Query-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js" integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+  <!--- JQuery --->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!--- our custom JavaScript file-->
     <script src="/scripts.js"></script>

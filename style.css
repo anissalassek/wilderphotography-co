@@ -259,10 +259,6 @@ max-height: 802px;
   background-attachment: fixed;
 }
 
-.banner p {
-  text-transform: uppercase;
-  font-size: 1.3rem;
-}
 
 .divider {
   border: none;
@@ -750,6 +746,49 @@ padding: 1rem;
   z-index: 1;
 }
 
+ 
+/* Mobile menu */
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #678872;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: #E9E5E2;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #E9E5E2;
+  color: white;
+}
 
 
 
@@ -794,6 +833,8 @@ padding: 1rem;
     background-clip: content-box;
     z-index: 2000;
    }
+
+   p { font-size: 2rem;}
 }
 
 /* --------------- XS Media Query (36em / 576px) --------------- */ 
@@ -811,7 +852,7 @@ padding: 1rem;
 
     h4 { font-size: 1rem; }
     .quote { font-size: 4rem;}
-    p { font-size: .8rem;} 
+    p { font-size: 1rem;} 
     h1 { font-size: 1.5rem;}
     h3 { font-size: 1.2rem; }
 
