@@ -200,11 +200,6 @@ header {
   background-repeat: no-repeat;
 }
 
-.bg-mountains {
-  background-image: url(/images/mountains-icon.png);
-  background-size: 10%;
-}
-
 .bg-logo {
   background-image: url(/images/logo.PNG);
   background-size: 70%;
@@ -226,26 +221,6 @@ header {
 .bg-w-banner-2 {
   background-image: url(/images/Wedding/W-5.jpg);
 }
-
-.bg-kw {
-max-width: 600px;
-max-height: 802px;
-}
-
-.bg-aboutme {
-  background-repeat: no-repeat;
-  background-position: center;
-  position:relative;
-  z-index: 0;
-}
-
-.b-pos {
-  background-color: #E9E5E2;
-  position: relative;
-  z-index: -1;
-}
-
-
 
 
 /* Banner */
@@ -326,10 +301,6 @@ max-height: 802px;
 }
 
 
-
-
-
-
 /* collections section */
 .hover-container {
   background-size: cover;
@@ -370,33 +341,7 @@ max-height: 802px;
   border-bottom: 1px solid;      
 }
 
-/* kind words */ 
-
-.kw-pos {
-  z-index: -2;
-  position: absolute;
-  border: none;
-  right: 0rem;
-} 
-
-.img-pos {
-  position: relative;
-  z-index: 0;
-}
-
-.kw-padded {
-  padding-left: 7rem;
-}
-
-.kw-leaves {
-  position: absolute;
-  right: 40rem;
-  top: -3rem;
-  max-width: 500px;
-  max-height: 500px;
-  z-index: 1;
-  background-repeat: no-repeat;
-}
+/* Kind Words */
 
 .quote { font-size: 6rem;}
 
@@ -522,93 +467,6 @@ padding: 1rem;
   padding: 10px;
   outline-offset: 10px;
 }
-
-
-
-/* welcome banner */
-.w-bg-1 {
-  position: absolute;
-  max-width: 50%;
-  max-height: 50%;
-  top: 30%;
-  right: 34%;
-  z-index: 5000;
-}
-
-.w-bg-2 {
-  position: absolute;
-  max-width: 90%;
-  max-height: 90%;
-  top: 0%;
-  right: 42%;
-  z-index: 2000;
-}
-
-.w-bg-3 {
-  position: absolute;
-  max-width: 55%;
-  max-height: 55%;
-  top: 5%;
-  right: 57%;
-  z-index: 3000;
-}
-
-.w-leaves {
-    position: absolute;
-    right: 35%;
-    top: -7%;
-    max-width: 110%;
-    max-height: 110%;
-    z-index: 1;
-  }
-
-  .w-w {
-    position: absolute;
-    right: 60%;
-    top: 65%;
-    max-width: 20%;
-    max-height: 20%;
-    z-index: 10000;
-  }
-
-
-/* Header - collections page */
-.c-bg-1 {
-  position: absolute;
-  max-width: 90%;
-  max-height: 90%;
-  top: 5%;
-  right: 15%;
-  z-index: 2;
-}
-
-.c-bg-2 {
-  position: absolute;
-  max-width: 60%;
-  max-height: 60%;
-  top: 20%;
-  right: 30%;
-  z-index: 3;
-}
-
-
-.c-leaves {
-    position: absolute;
-    right: 25%;
-    top: -7%;
-    max-width: 100%;
-    max-height: 100%;
-    z-index: 1;
-  }
-
-  .c-w {
-    position: absolute;
-    right: -190%;
-    top: -25%;
-    max-width: 20%;
-    max-height: 20%;
-    z-index: 10000;
-  }
 
 
 /* Services */
