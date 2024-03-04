@@ -116,6 +116,12 @@
     padding:3% 5%;
   }
 
+  .wf-text {
+    font-size: 1.5rem;
+    font-family: 'Wildflower Blossom';
+    text-transform: uppercase;
+  }
+
   a{
     text-decoration: none;
     color: inherit;
@@ -825,7 +831,7 @@ padding: 1rem;
    }
 
    h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
    }
 
    
