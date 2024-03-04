@@ -2,7 +2,7 @@
   green: #6B7E6B;
   black: #3B3B3B
   font-family: 'Bodoni Moda', serif;
-
+  font-family: 'Span', serif;
 */
 
 
@@ -58,7 +58,7 @@
   /* General typography */
 
   h1, h2, h3, h4 {
-    font-family: 'Wildflower Blossom';
+    font-family: 'Wildflower Blossom', 'Span', serif;
     src: url('wildflowerblossomitalicttf-webfont.woff2') format('woff2'),
          url('wildflowerblossomitalicttf-webfont.woff') format('woff');
     font-weight: normal;
@@ -234,7 +234,7 @@ header {
               
 .banner,
 .banner-with-header {
-  background-image: url('/images/Couples/c-lan-27.jpg');
+
   background-size: cover;
   background-position: top;
   min-height: 100vh;
@@ -749,7 +749,76 @@ padding: 1rem;
   padding-left: 20px;
 }
 
+.author {
+  font-size: 0.9rem;
+  color: white;
+  margin-top: 0.5rem;
+  text-align: right;
+}
 
+
+
+
+
+/* Slider */
+.testimonial-slider-container {
+  padding: 5%;
+  max-width: 900px;
+  margin: auto;
+}
+
+.slider-item {
+  padding: 1rem;
+  display: none;
+}
+
+.slider-item:first-child {
+  display: block;
+}
+
+.slick-next {
+  right: 10px;
+}
+
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next::before, .slick-prev::before {
+    font-family: inherit;
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: white;
+}
+
+.slick-dots {
+  left: 0;
+  bottom: 10px;
+  /*  Without this the padding on the parent affects the centering of the dots. Do not delete.    */
+}
+
+.slick-dots li,
+.slick-dots li button {
+  width: 10px;
+}
+
+.slick-dots li button::before {
+  color: white;
+}
+
+.slick-dots li.slick-active button::before {
+  color: white;
+}
+
+
+/* Slider Text Styles  */
+
+.slider-item p {
+  text-align: justify;
+  font-family: 'Playfair Display';
+  font-size: 1.5rem;
+}
 
 
 /* General CSS Styles (apply everywhere) */ 

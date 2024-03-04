@@ -25,13 +25,13 @@ collections:
 <section class="grid-middle padded b-bg sm-text-center">
   <div class="col-1 hide-sm"></div>
   <div class="col-4_sm-12">
-      <h1 class="">My Services</h1>
+      <h1 class="editable">My Services</h1>
       
   </div>
   <div class="col-1 hide-sm"></div>
     <div class="col-6_sm-12 image-container-collections">
-      <img src="/images/Couples/c-por-11.jpg" alt="Left Image" class="image-frame hide-sm">
-      <img src="images/Wedding/w-por-6.jpg" alt="Center Image" class="sm-imageframe">
+      <img src="/images/Couples/c-por-11.jpg" alt="Left Image" class="image-frame hide-sm editable">
+      <img src="images/Wedding/w-por-6.jpg" alt="Center Image" class="sm-imageframe editable">
       <img src="/images/aboutme-leaves.png" alt="Leaves" class="hide-sm"/>
     </div>
   </section>
@@ -41,8 +41,8 @@ collections:
 <section class="grid centered padded b-bg">
     <div class="col-2"></div>
     <div class="col-8">
-        <h3>My promise to you</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus tempore ex tempora adipisci deleniti commodi, ab magni. Nostrum doloremque necessitatibus voluptas eaque molestias dolore sed, distinctio, ratione dicta quos quas.</p>
+        <h3 class="editable">My promise to you</h3>
+        <p class="editable">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus tempore ex tempora adipisci deleniti commodi, ab magni. Nostrum doloremque necessitatibus voluptas eaque molestias dolore sed, distinctio, ratione dicta quos quas.</p>
     </div>
     <div class="col-2"></div>
 </section>
@@ -53,11 +53,7 @@ collections:
   <div class="grid md:grid-cols-3 p-4 padded-2">
     {% for item in page.collections %}
     <div class="col-3_sm-6 p-4">
-      <div class="hover-container image-frame" style="background-image:url('{{item.featured_image}}')">
-        <div class="hover-overlay">
-          <div class="hover-inner"></div>
-        </div>
-      </div>
+      <div class="image-frame" style="background-image: url('{{item.featured_image}}'); background-size: cover; background-position: center; width: 100%; height: 200px;"></div>
       <!-- Description -->
       <div class="item-title">
         <h4 class="caps">{{item.title}}</h4>
@@ -67,21 +63,22 @@ collections:
     {% endfor %}
   </div>
 </section>
+
       
         
 <!--FAQ-->
 
 <section class="grid-middle padded g-bg light-text">
     <div class="col-4">
-        <h2>Frequently Asked Questions</h2>
+        <h2 class="editable">Frequently Asked Questions</h2>
     </div>
     <div class="col-8 right">
-        <h3>Question</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora facilis itaque autem qui quaerat vel quod mollitia nisi vero, fugit.</p>
-        <h3>Question</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora facilis itaque autem qui quaerat vel quod mollitia nisi vero, fugit.</p>
-        <h3>Question</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora facilis itaque autem qui quaerat vel quod mollitia nisi vero, fugit.</p>
+        <h3 class="editable">Question</h3>
+        <p class="editable">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora facilis itaque autem qui quaerat vel quod mollitia nisi vero, fugit.</p>
+        <h3 class="editable">Question</h3>
+        <p class="editable">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora facilis itaque autem qui quaerat vel quod mollitia nisi vero, fugit.</p>
+        <h3 class="editable">Question</h3>
+        <p class="editable">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora facilis itaque autem qui quaerat vel quod mollitia nisi vero, fugit.</p>
     </div>
 </section>
 
@@ -90,8 +87,8 @@ collections:
 <section class="grid-middle centered">
     <div class="col-12 tall-60 bg-image overlay container" style="background-image: url(/images/Couples/c-lan-14.jpg);">
       <div class="padded padded-t overlay-c overlay-1 centered div-frame">
-        <h2>Like what you see? 
-          <p><a href="/contact.html" class="button button-black"> Let's Talk </a><p>
+        <h2 class="editable">Like what you see? 
+          <p class="editable"><a href="/contact.html" class="button button-black"> Let's Talk </a><p>
         </h2>
         </h2>
      </div>
