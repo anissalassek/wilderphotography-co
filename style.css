@@ -62,7 +62,7 @@
     src: url('wildflowerblossomitalicttf-webfont.woff2') format('woff2'),
          url('wildflowerblossomitalicttf-webfont.woff') format('woff');
     font-weight: normal;
-    font-style: italic;
+    font-style: normal;
     letter-spacing: .08em;
     text-transform: uppercase;
   }
@@ -96,6 +96,7 @@
   margin-bottom:0;
   }
 
+
   /* this is a line element */
 
   hr { 
@@ -110,17 +111,13 @@
 /* Nav */
 
   nav a {
-    font-size: 1.5rem;
-    font-family: 'Wildflower Blossom';
+    font-size: 1rem;
+    font-family: 'Bodoni Moda' serif;
     text-transform: uppercase;
     padding:3% 5%;
   }
 
-  .wf-text {
-    font-size: 1.5rem;
-    font-family: 'Wildflower Blossom';
-    text-transform: uppercase;
-  }
+
 
   a{
     text-decoration: none;
