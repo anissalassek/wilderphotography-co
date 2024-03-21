@@ -97,8 +97,8 @@ testimonials:
   <div class="col-10">
     <div class="testimonial-slider-container testimonial"> 
     <!-------------------- SLIDE 1 ------------------------------>
-    {% for item in page.testimonials %}
     <div class="slider-item"> 
+    {% for item in page.testimonials %}
       <p> {{item.quote}}  </p>
       <p class="right author"> {{item.author}} </p>  
     {% endfor %}
@@ -122,7 +122,7 @@ testimonials:
     <p class="editable">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis tempore nihil laboriosam voluptas qui impedit! Facere assumenda quia qui iusto deserunt nihil totam ipsam. Repudiandae consequuntur ipsam fugiat assumenda obcaecati.</p>
   </div>
   <div class="col-1"></div>
-  <div class="col-5 tall-60 bg-image portrait image-frame" style="background_image: url('/images/bryn-3.png');">
+  <div class="col-5 tall-60 bg-image portrait image-frame editable" style="background-image: url('/images/bryn-3.png');">
   </div>
 </section>
 
