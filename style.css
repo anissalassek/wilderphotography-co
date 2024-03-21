@@ -155,6 +155,14 @@
     font-size: 1rem;
     text-decoration: none;
     color: inherit;
+    font-family: 'Bodoni Moda', serif;
+    text-transform: uppercase;
+  }
+
+  footer a {
+    font-size: .8rem;
+    text-decoration: none;
+    color: inherit;
     font-family: Bodoni Moda, serif;
     text-transform: uppercase;
   }
