@@ -159,7 +159,7 @@
     text-transform: uppercase;
   }
 
-  footer a {
+  .footer-nav {
     font-size: .8rem;
     text-decoration: none;
     color: inherit;
