@@ -14,13 +14,6 @@ collections:
 -   link: /lifestyle.html
     featured_image: /images/coll-lifestyle.png
     title: Lifestyle
-testimonials:
--   quote: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, facere doloremque quam earum qui odio accusamus est dolore incidunt animi, consequuntur iste neque beatae inventore debitis at ipsa quas. Adipisci!
-    author: -Customer
--   quote: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, facere doloremque quam earum qui odio accusamus est dolore incidunt animi, consequuntur iste neque beatae inventore debitis at ipsa quas. Adipisci!
-    author: -Customer
--   quote: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, facere doloremque quam earum qui odio accusamus est dolore incidunt animi, consequuntur iste neque beatae inventore debitis at ipsa quas. Adipisci!
-    author: -Customer
 ---
 
  
@@ -55,7 +48,7 @@ testimonials:
       <img src="/images/W.png" alt="W"/>
   </section>
   <div class="centered col-12 b-bg button-padding padded-1"> 
-      <a href="#" class="button-black button editable"> Let's Talk </a>
+      <a href="/contact.html" class="button-black button editable"> Let's Talk </a>
 </div>
 
 
@@ -97,11 +90,21 @@ testimonials:
   <div class="col-10">
     <div class="testimonial-slider-container testimonial"> 
     <!-------------------- SLIDE 1 ------------------------------>
-    <div class="slider-item"> 
     {% for item in page.testimonials %}
+    <div class="slider-item"> 
       <p> {{item.quote}}  </p>
       <p class="right author"> {{item.author}} </p>  
     {% endfor %}
+    </div> 
+    <!-------------------- SLIDE 2 ------------------------------>
+    <div class="slider-item">
+          <p class="editable"> Vel placeat laudantium ipsam nam optio aut dicta, reprehenderit enim recusandae? Odio perferendis veniam earum placeat quo amet laborum qui odit rerum. </p>
+      <p class="right author editable"> - Author </p>  
+    </div> 
+    <!-------------------- SLIDE 3 ------------------------------>
+    <div class="slider-item">
+          <p class="editable"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel placeat laudantium ipsam nam optio aut dicta, reprehenderit enim recusandae? Odio perferendis veniam earum placeat quo amet laborum qui odit rerum. </p>
+      <p class="right author editable"> - Author </p>  
     </div> 
   </div>
   </div> 
@@ -122,7 +125,7 @@ testimonials:
     <p class="editable">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis tempore nihil laboriosam voluptas qui impedit! Facere assumenda quia qui iusto deserunt nihil totam ipsam. Repudiandae consequuntur ipsam fugiat assumenda obcaecati.</p>
   </div>
   <div class="col-1"></div>
-  <div class="col-5 tall-60 bg-image portrait image-frame editable" style="background-image: url('/images/bryn-3.png');">
+  <div class="col-5 tall-60 bg-image portrait image-frame" style="background-image: url('/images/bryn-3.png');">
   </div>
 </section>
 
@@ -130,7 +133,7 @@ testimonials:
 <!---Button -->
 
 <section class="grid-middle centered">
-  <div class="col-12 tall-60 bg-image overlay container" style="background_image: url(/images/Wedding/w-lan-3.jpg);">
+  <div class="col-12 tall-60 bg-image overlay container" style="background-image: url(/images/Wedding/w-lan-3.jpg);">
     <div class="padded padded-t overlay-c overlay-1 centered div-frame">
       <h2 class="editable">Like what you see? 
         <a href="/contact.html" class="button editable"> Let's Talk </a>
