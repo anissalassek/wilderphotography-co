@@ -151,6 +151,11 @@
     color: #6B7E6B;
   }
 
+  .coll-nav{
+    text-decoration: none;
+    color: inherit;
+    font-family: Bodoni Moda, serif;
+  }
 
 /* Colors */
 .b-bg {
