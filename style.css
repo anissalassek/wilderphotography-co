@@ -391,6 +391,7 @@ header {
   font-weight: 700;
   margin: 2%;
   font-family: ;
+  z-index: 2000;
 }
 
 .button-green {
