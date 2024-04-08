@@ -1,23 +1,35 @@
 ---
 layout: default
-title: Services 
+title: Services
 collections:
--   link: /weddings.html
-    featured_image: /images/coll-wedding.png
-    title: Weddings
-    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ea quia doloremque. 
--   link: /families.html
-    featured_image: /images/coll-family.png
-    title: Families
-    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ea quia doloremque. 
--   link: /couples.html
-    featured_image: /images/coll-couples.png
-    title: Couples
-    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ea quia doloremque. 
--   link: /lifestyle.html
-    featured_image: /images/coll-lifestyle.png
-    title: Lifestyle
-    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ea quia doloremque. 
+    -
+        link: /weddings.html
+        featured_image: /images/coll-wedding.png
+        title: Weddings
+        description: >-
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ea
+            quia doloremque.
+    -
+        link: /families.html
+        featured_image: /images/coll-family.png
+        title: Families
+        description: >-
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ea
+            quia doloremque.
+    -
+        link: /couples.html
+        featured_image: /images/coll-couples.png
+        title: Couples
+        description: >-
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ea
+            quia doloremque.
+    -
+        link: /lifestyle.html
+        featured_image: /images/coll-lifestyle.png
+        title: Lifestyle
+        description: >-
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ea
+            quia doloremque.
 ---
 <!---Collections Header -->
 <div class="padded b-bg"></div>
@@ -30,13 +42,13 @@ collections:
   </div>
   <div class="col-1 hide-sm"></div>
     <div class="col-6_sm-12 image-container-collections">
-      <img src="/images/Couples/c-por-11.jpg" alt="Left Image" class="image-frame hide-sm editable">
-      <img src="images/Wedding/w-por-6.jpg" alt="Center Image" class="sm-imageframe editable">
-      <img src="/images/aboutme-leaves.png" alt="Leaves" class="hide-sm editable"/>
+      <img src="/images/Couples/c-por-11.jpg" alt="Left Image" class="image-frame hide-sm editable" />
+      <img src="images/Wedding/w-por-6.jpg" alt="Center Image" class="sm-imageframe editable" />
+      <img src="/images/aboutme-leaves.png" alt="Leaves" class="hide-sm editable" />
     </div>
   </section>
 
-  <hr class="divider">
+  <hr class="divider" />
 
 <!--- promise -->
 
@@ -50,7 +62,7 @@ collections:
 </section>
 
 <!--services-->
-<hr class="divider">
+<hr class="divider" />
 <section class="p-5p centered">
   <div class="grid md:grid-cols-3 p-4 padded-2">
     {% for item in page.collections %}
@@ -90,9 +102,9 @@ collections:
     <div class="col-12 tall-60 bg-image overlay container" style="background-image: url(/images/Couples/c-lan-14.jpg);">
       <div class="padded padded-t overlay-c overlay-1 centered div-frame">
         <h2 class="editable">Like what you see? 
-          <a href="/contact.html" class="button button-black"> Let's Talk </a>
-        </h2>
-        </h2>
+          <p class="editable"><a href="/contact.html" class="button button-black editable"> Let's Talk </a></p><p>
+        </p></h2>
+        
      </div>
     </div>
   </section>

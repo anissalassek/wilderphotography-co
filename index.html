@@ -1,22 +1,24 @@
 ---
 layout: default
 title: Homepage
-collections: 
--   link: /weddings.html
-    featured_image: /images/coll-wedding.png
-    title: Weddings
--   link: /families.html
-    featured_image: /images/coll-family.png
-    title: Families
--   link: /couples.html
-    featured_image: /images/coll-couples.png
-    title: Couples
--   link: /lifestyle.html
-    featured_image: /images/coll-lifestyle.png
-    title: Lifestyle
+collections:
+    -
+        link: /weddings.html
+        featured_image: /images/coll-wedding.png
+        title: Weddings
+    -
+        link: /families.html
+        featured_image: /images/coll-family.png
+        title: Families
+    -
+        link: /couples.html
+        featured_image: /images/coll-couples.png
+        title: Couples
+    -
+        link: /lifestyle.html
+        featured_image: /images/coll-lifestyle.png
+        title: Lifestyle
 ---
-
- 
 <section class="banner flex items-center justify-center bg-overlay" style="background-image: url('/images/Couples/c-lan-27.jpg');">
     <div class="md:w-[50%] bg-slate-200 p-8">
       <div class="p-heading banner-inner banner-h1 padded-2 centered padded light-text">
@@ -26,7 +28,7 @@ collections:
     </div>
 </section>
 
-<hr class="divider">
+<hr class="divider" />
 
 <!---welcome banner-->
 
@@ -41,15 +43,14 @@ collections:
  
   <section class="container b-bg tall-50">
     <div class="image-container">
-      <img src="/images/Couples/c-por-11.jpg" alt="Left Image" class="image-frame editable">
-      <img src="images/Wedding/w-por-6.jpg" alt="Center Image">
-      <img src="/images/Families/f-por-14.jpg" alt="Right Image" class="image-frame editable">
-      <img src="/images/plant.png" alt="Leaves"/>
-      <img src="/images/W.png" alt="W"/>
-    </div>
-  </section>
+      <img src="/images/Couples/c-por-11.jpg" alt="Left Image" class="image-frame editable" />
+      <img src="images/Wedding/w-por-6.jpg" alt="Center Image" class="editable" />
+      <img src="/images/Families/f-por-14.jpg" alt="Right Image" class="image-frame editable" />
+      <img src="/images/plant.png" alt="Leaves" />
+      <img src="/images/W.png" alt="W" />
+  </div></section>
   <div class="centered col-12 b-bg button-padding padded-1"> 
-      <a href="#" class="button-black button editable"> Let's Talk </a>
+      <a href="/contact.html" class="button-black button editable"> Let's Talk </a>
 </div>
 
 
@@ -57,7 +58,7 @@ collections:
 
 <!-- collections section -->
 
-<hr class="divider">
+<hr class="divider" />
 <section class="padded-1">
 <div class="centered">
   <h3 class="editable">Take a look at my work</h3>
@@ -91,9 +92,11 @@ collections:
   <div class="col-10">
     <div class="testimonial-slider-container testimonial"> 
     <!-------------------- SLIDE 1 ------------------------------>
+    {% for item in page.testimonials %}
     <div class="slider-item"> 
-      <p class="editable"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel placeat laudantium ipsam nam optio aut dicta, reprehenderit enim recusandae?  </p>
-      <p class="right author editable"> - Author </p>  
+      <p> {{item.quote}}  </p>
+      <p class="right author"> {{item.author}} </p>  
+    {% endfor %}
     </div> 
     <!-------------------- SLIDE 2 ------------------------------>
     <div class="slider-item">
@@ -104,11 +107,6 @@ collections:
     <div class="slider-item">
           <p class="editable"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel placeat laudantium ipsam nam optio aut dicta, reprehenderit enim recusandae? Odio perferendis veniam earum placeat quo amet laborum qui odit rerum. </p>
       <p class="right author editable"> - Author </p>  
-    </div> 
-    <!-------------------- SLIDE 4 ------------------------------>
-    <div class="slider-item">
-          <p class="editable"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel placeat laudantium ipsam nam optio aut dicta, reprehenderit enim recusandae? Odio perferendis veniam earum placeat quo amet laborum qui odit rerum. </p>
-      <p class="right author editable"> - Author </p>   
     </div> 
   </div>
   </div> 
@@ -124,7 +122,7 @@ collections:
       
 <section class="grid-middle padded container">
   <div class="col-6">
-    <img src="/images/W.png" class="am-w hide-sm"/>
+    <img src="/images/W.png" class="am-w hide-sm" />
     <h2 class="editable">Well hello there.</h2>
     <p class="editable">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis tempore nihil laboriosam voluptas qui impedit! Facere assumenda quia qui iusto deserunt nihil totam ipsam. Repudiandae consequuntur ipsam fugiat assumenda obcaecati.</p>
   </div>
@@ -140,8 +138,11 @@ collections:
   <div class="col-12 tall-60 bg-image overlay container" style="background-image: url(/images/Wedding/w-lan-3.jpg);">
     <div class="padded padded-t overlay-c overlay-1 centered div-frame">
       <h2 class="editable">Like what you see? 
-        <a href="/contact.html" class="button"> Let's Talk </a>
+        <a href="/contact.html" class="button editable"> Let's Talk </a>
       </h2>
    </div>
   </div>
 </section>
+
+
+
