@@ -1,44 +1,33 @@
 ---
 layout: default
-about:
-- introduction: Well Hello There
-  about-description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius delectus facere quod enim asperiores voluptatibus, consequatur est fuga totam ea distinctio! Quas, delectus vero quasi eum nam in ducimus cupiditate?
-  bryn-photo: /images/bryn-3.png
-
-button-banner:
-- background_image: /images/Wedding/w-lan-3.jpg
-  button-title: Like what you see?
-  button-text: Let's Talk
+testimonials:
+- customer-text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto vitae culpa amet repellat, quasi aliquid eos eum fuga. 
+  customer-name: customer name
+- customer-text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto vitae culpa amet repellat, quasi aliquid eos eum fuga. 
+  customer-name: customer name
+- customer-text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto vitae culpa amet repellat, quasi aliquid eos eum fuga. 
+  customer-name: customer name
 ---
 
-<!--- About me section --->
-      
-<section class="grid-middle padded container">
-  <div class="col-6">
-    {% for item in page.about %}
-    <img src="/images/W.png" class="am-w hide-sm" />
-    <h2>{{item.introduction}}</h2>
-    <p>{{item.about-description}}</p>
-  </div>
-  <div class="col-1"></div>
-  <div class="col-5 tall-60 bg-image portrait image-frame" style="background-image: url('{{item.bryn-photo}}');">
-  </div>
-  {% endfor %}
-</section>
+<!--Kind Words-->
 
-
-<!---Button -->
-
-<section class="grid-middle centered">
-  {% for item in page.button-banner%}
-  <div class="col-12 tall-60 bg-image overlay container" style="background-image: url({{item.background_image}});">
-    <div class="padded padded-t overlay-c overlay-1 centered div-frame">
-      <h2> {{item.button-title}}
-        <div class="centered col-12 padded-1"> 
-          <a href="/contact.html" class="button-black button"> {{item.button-text}} </a>
-        </div>
-      </h2>
-      {% endfor %}
-   </div>
+<section class="grid g-bg light-text"> 
+  <h2 class="col-12 centered padded-1 editable">Kind Words</h2>  
+  <div class="col-1 right">
+    <span class="quote"> “ </span> 
+  </div> 
+  <div class="col-10">
+    <div class="testimonial-slider-container testimonial"> 
+    <!-------------------- SLIDE 1 ------------------------------>
+    {% for item in page.testimonials%}
+    <div class="slider-item"> 
+      <p> {{item.customer-text}}  </p>
+      <p class="right author"> {{item.customer-name}} </p>  
+    </div> 
+    {% endfor %}
   </div>
-</section>
+  </div> 
+  <div class="col-1">
+    <span class="quote"> ” </span> 
+  </div> 
+</section> 

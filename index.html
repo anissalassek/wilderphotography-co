@@ -37,6 +37,14 @@ about:
     about-description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius delectus facere quod enim asperiores voluptatibus, consequatur est fuga totam ea distinctio! Quas, delectus vero quasi eum nam in ducimus cupiditate?
     bryn-photo: /images/bryn-3.png
 
+testimonials:
+  - customer-text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto vitae culpa amet repellat, quasi aliquid eos eum fuga. 
+    customer-name: customer name
+  - customer-text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto vitae culpa amet repellat, quasi aliquid eos eum fuga. 
+    customer-name: customer name
+  - customer-text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto vitae culpa amet repellat, quasi aliquid eos eum fuga. 
+    customer-name: customer name
+
 button-banner:
   - background_image: /images/Wedding/w-lan-3.jpg
     button-title: Like what you see?
@@ -117,39 +125,25 @@ button-banner:
 <!--Kind Words-->
 
 <section class="grid g-bg light-text"> 
-  <h2 class="col-12 centered padded-1 editable">  Kind Words </h2>  
+  <h2 class="col-12 centered padded-1 editable">Kind Words</h2>  
   <div class="col-1 right">
     <span class="quote"> “ </span> 
   </div> 
   <div class="col-10">
     <div class="testimonial-slider-container testimonial"> 
     <!-------------------- SLIDE 1 ------------------------------>
+    {% for item in page.testimonials%}
     <div class="slider-item"> 
-      <p class="editable"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel placeat laudantium ipsam nam optio aut dicta, reprehenderit enim recusandae?  </p>
-      <p class="right author editable"> - Author </p>  
+      <p> {{item.customer-text}}  </p>
+      <p class="right author"> {{item.customer-name}} </p>  
     </div> 
-    <!-------------------- SLIDE 2 ------------------------------>
-    <div class="slider-item">
-          <p class="editable"> Vel placeat laudantium ipsam nam optio aut dicta, reprehenderit enim recusandae? Odio perferendis veniam earum placeat quo amet laborum qui odit rerum. </p>
-      <p class="right author editable"> - Author </p>  
-    </div> 
-    <!-------------------- SLIDE 3 ------------------------------>
-    <div class="slider-item">
-          <p class="editable"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel placeat laudantium ipsam nam optio aut dicta, reprehenderit enim recusandae? Odio perferendis veniam earum placeat quo amet laborum qui odit rerum. </p>
-      <p class="right author editable"> - Author </p>  
-    </div> 
-    <!-------------------- SLIDE 4 ------------------------------>
-    <div class="slider-item">
-          <p class="editable"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel placeat laudantium ipsam nam optio aut dicta, reprehenderit enim recusandae? Odio perferendis veniam earum placeat quo amet laborum qui odit rerum. </p>
-      <p class="right author editable"> - Author </p>   
-    </div> 
+    {% endfor %}
   </div>
   </div> 
   <div class="col-1">
     <span class="quote"> ” </span> 
   </div> 
 </section> 
-
 
 
 <!--- About me section --->
