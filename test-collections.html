@@ -4,6 +4,11 @@ about:
 - introduction: Well Hello There
   about-description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius delectus facere quod enim asperiores voluptatibus, consequatur est fuga totam ea distinctio! Quas, delectus vero quasi eum nam in ducimus cupiditate?
   bryn-photo: /images/bryn-3.png
+
+button-banner:
+- background_image: /images/Wedding/w-lan-3.jpg
+  button-title: Like what you see?
+  button-text: Let's Talk
 ---
 
 <!--- About me section --->
@@ -25,13 +30,15 @@ about:
 <!---Button -->
 
 <section class="grid-middle centered">
-  <div class="col-12 tall-60 bg-image overlay container" style="background-image: url(/images/Wedding/w-lan-3.jpg);">
+  {% for item in page.button-banner%}
+  <div class="col-12 tall-60 bg-image overlay container" style="background-image: url({{item.background_image}});">
     <div class="padded padded-t overlay-c overlay-1 centered div-frame">
-      <h2 class="editable">Like what you see? 
+      <h2> {{item.button-title}}
         <div class="centered col-12 padded-1"> 
-          <a href="/contact.html" class="button-black button editable"> Let's Talk </a>
+          <a href="/contact.html" class="button-black button"> {{item.button-text}} </a>
         </div>
       </h2>
+      {% endfor %}
    </div>
   </div>
 </section>
