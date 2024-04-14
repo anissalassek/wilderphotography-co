@@ -7,61 +7,61 @@ collectionsbanner:
   title: Families
 
 families:
-  - column-size: col-6
+  - column-sizes: col-6
     aspect-ratio: portrait
     background_image: /images/Families/f-por-1.jpg
-  - column-size: col-6
+  - column-sizes: col-6
     aspect-ratio: portrait
     background_image: /images/Families/f-por-2.jpg
-  - column-size: col-4_sm-12
+  - column-sizes: col-4_sm-12
     aspect-ratio: landscape
     background_image: /images/Families/f-lan-8.jpg
-  - column-size: col-4_sm-12
+  - column-sizes: col-4_sm-12
     aspect-ratio: landscape
     background_image: /images/Families/f-lan-7.jpg
-  - column-size: col-4_sm-12
+  - column-sizes: col-4_sm-12
     aspect-ratio: landscape
     background_image: /images/Families/f-lan-6.jpg
-  - column-size: col-12
+  - column-sizes: col-12
     aspect-ratio: landscape
     background_image: /images/Families/f-lan-1.jpg
-  - column-size: col-4_sm-12
+  - column-sizes: col-4_sm-12
     aspect-ratio: portrait
     background_image: /images/Families/f-por-3.jpg
-  - column-size: col-4_sm-12
+  - column-sizes: col-4_sm-12
     aspect-ratio: portrait
     background_image: /images/Families/f-por-4.jpg
-  - column-size: col-4_sm-12
+  - column-sizes: col-4_sm-12
     aspect-ratio: portrait
     background_image: /images/Families/f-por-9.jpg
-  - column-size: col-6_sm-12
+  - column-sizes: col-6_sm-12
     aspect-ratio: portrait
     background_image: /images/Families/f-por-10.jpg
-  - column-size: col-6_sm-12
+  - column-sizes: col-6_sm-12
     aspect-ratio: portrait
     background_image: /images/Families/f-por-11.jpg
-  - column-size: col-3_sm-12
+  - column-sizes: col-3_sm-12
     aspect-ratio: portrait
     background_image: /images/Families/f-por-12.jpg
-  - column-size: col-3_sm-12
+  - column-sizes: col-3_sm-12
     aspect-ratio: portrait
     background_image: /images/Families/f-por-13.jpg
-  - column-size: col-3_sm-12
+  - column-sizes: col-3_sm-12
     aspect-ratio: portrait
     background_image: /images/Families/f-por-15.jpg
-  - column-size: col-3_sm-12
+  - column-sizes: col-3_sm-12
     aspect-ratio: portrait
     background_image: /images/Families/f-por-16.jpg
-  - column-size: col-4_sm-12
+  - column-sizes: col-4_sm-12
     aspect-ratio: landscape
     background_image: /images/Families/f-lan-2.jpg
-  - column-size: col-4_sm-12
+  - column-sizes: col-4_sm-12
     aspect-ratio: landscape
     background_image: /images/Families/f-lan-3.jpg
-  - column-size: col-4_sm-12
+  - column-sizes: col-4_sm-12
     aspect-ratio: landscape
     background_image: /images/Families/f-lan-4.jpg
-  - column-size: col-12_sm-12
+  - column-sizes: col-12_sm-12
     aspect-ratio: landscape
     background_image: /images/Families/f-lan-5.jpg
 ---
@@ -81,7 +81,7 @@ families:
 <div class="gallery grid-middle padded">
     {% for item in page.families %}
 
-    <div class="{{item.column-size}}">
+    <div class="{{item.column-sizes}}">
       <div class="bg-image {{item.aspect-ratio}}"
            style="background-image: url('{{item.background_image}}');">
       </div>
