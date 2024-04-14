@@ -1,0 +1,13 @@
+<section class="grid-middle centered">
+    {% for item in page.button-banner%}
+    <div class="col-12 tall-60 bg-image overlay container" style="background-image: url({{item.background_image}});">
+      <div class="padded padded-t overlay-c overlay-1 centered div-frame">
+        <h2> {{item.button-title}}
+          <div class="centered col-12 padded-1"> 
+            <a href="/contact.html" class="button-black button"> {{item.button-text}} </a>
+          </div>
+        </h2>
+        {% endfor %}
+     </div>
+    </div>
+  </section>
