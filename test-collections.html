@@ -1,110 +1,37 @@
 ---
 layout: default
-title: Collections  
-collections:
--   link: /weddings.html
-    featured_image: /images/coll-wedding.png
-    title: Weddings
--   link: /families.html
-    featured_image: /images/coll-family.png
-    title: Families
--   link: /couples.html
-    featured_image: /images/coll-couples.png
-    title: Couples
--   link: /lifestyle.html
-    featured_image: /images/coll-lifestyle.png
-    title: Lifestyle
+about:
+- introduction: Well Hello There
+  about-description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius delectus facere quod enim asperiores voluptatibus, consequatur est fuga totam ea distinctio! Quas, delectus vero quasi eum nam in ducimus cupiditate?
+  bryn-photo: /images/bryn-3.png
 ---
 
-<!---Collections Header -->
-<div class="padded b-bg"></div>
-
-<section class="grid-middle padded b-bg sm-text-center">
-  <div class="col-1 hide-sm"></div>
-  <div class="col-4_sm-12">
-      <h2 class="">Collection of my Work</h2>
-      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ratione asperiores porro distinctio laborum labore perspiciatis consectetur delectus rerum quam, dolorem, sunt, nulla velit placeat! Amet neque vero molestiae quod?</p>
+<!--- About me section --->
+      
+<section class="grid-middle padded container">
+  <div class="col-6">
+    {% for item in page.about %}
+    <img src="/images/W.png" class="am-w hide-sm" />
+    <h2>{{item.introduction}}</h2>
+    <p>{{item.about-description}}</p>
   </div>
-  <div class="col-1 hide-sm"></div>
-    <div class="col-6_sm-12 image-container-collections">
-      <img src="/images/Couples/c-por-11.jpg" alt="Left Image" class="image-frame hide-sm">
-      <img src="images/Wedding/w-por-6.jpg" alt="Center Image" class="sm-imageframe">
-      <img src="/images/aboutme-leaves.png" alt="Leaves" class="hide-sm"/>
-    </div>
-  </section>
-
-
-<!--Collections -->
-
-
-<hr class="divider">
-<section class="padded-1">
-  <div class="centered">
-    <h3 class="editable">Take a look at my work</h3>
+  <div class="col-1"></div>
+  <div class="col-5 tall-60 bg-image portrait image-frame" style="background-image: url('{{item.bryn-photo}}');">
   </div>
+  {% endfor %}
 </section>
-<section class="p-5p centered">
-  <div class="grid md:grid-cols-3 p-4 padded-2">
-    {% for item in page.collections %}
-    <div class="col-3_sm-6 p-4">
-      <div class="hover-container image-frame" style="background-image:url('{{item.featured_image}}')">
-        <div class="hover-overlay">
-          <div class="hover-inner"></div>
+
+
+<!---Button -->
+
+<section class="grid-middle centered">
+  <div class="col-12 tall-60 bg-image overlay container" style="background-image: url(/images/Wedding/w-lan-3.jpg);">
+    <div class="padded padded-t overlay-c overlay-1 centered div-frame">
+      <h2 class="editable">Like what you see? 
+        <div class="centered col-12 padded-1"> 
+          <a href="/contact.html" class="button-black button editable"> Let's Talk </a>
         </div>
-      </div>
-      <!-- Description -->
-      <div class="item-title caps">{{item.title}}</div>
-    </div>
-    {% endfor %}
+      </h2>
+   </div>
   </div>
 </section>
-
-<!-- Kind words -->
-
-<section class="grid-middle padded g-pos light-text">
-  <div class="col-1">
-    <span class="quote">“</span>
-  </div>
-  <div class="col-10 centered">
-    <div></div>
-    <h2>kind words</h2>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis tempore nihil laboriosam voluptas qui impedit! Facere assumenda quia qui iusto deserunt nihil totam ipsam. Repudiandae consequuntur ipsam fugiat assumenda obcaecati.</p>
-  </div>
-  <div class="col-1 right">
-    <span class="quote">”</span>
-  </div>
-</section>
-
-
-
-<!--- Contact Section -->
-
-  <section class="grid-middle padded b-bg">
-  
-    <div class="col-6_sm-12 centered">
-      <img src="/images/girl.png" alt="center image" class="image-frame" style="max-width: 60%;">
-    </div>
-
-    <div class="col-6_sm-12 centered">
-      <h2>I would love to speak to you!</h2>
-      <div class="">
-        <form name="contact" method="POST" data-netlify="true">
-            <p>
-              <label>Your Name: <input type="text" name="name" /></label>
-            </p>
-            <p>
-              <label>Your Email: <input type="email" name="email" /></label>
-            </p>
-            <p>
-              <label>Your Phone Number (optional): <input type="telephone" name="telephone" /></label>
-            </p>
-            <p>
-              <label>Message: <textarea name="message"></textarea></label>
-            </p>
-            <p>
-              <button type="submit" class="button">Send</button>
-            </p>
-          </form>
-  </div>
-  </div>
-  </section>

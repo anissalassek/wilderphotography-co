@@ -1,57 +1,84 @@
 ---
 layout: default
 title: Homepage
+banner:
+- banner-image: /images/Couples/c-lan-27.jpg
+  title: Wedding & Lifestyle Photographer 
+  description: capturing moments in Colorado & beyond
+
+welcome: 
+- title: Welcome to Wilder Photography Co.
+  welcome-description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id odit laboriosam est temporibus, aperiam modi quae beatae, ab, repellat delectus saepe quo mollitia labore repellendus! Sit earum blanditiis rem perspiciatis!
+  left-image: /images/Couples/c-por-11.jpg
+  center-image: /images/Wedding/w-por-6.jpg
+  right-image: /images/Families/f-por-14.jpg
+  button: Let's Talk
+
 collections:
-    -
-        link: /weddings.html
-        featured_image: /images/coll-wedding.png
-        title: Weddings
-    -
-        link: /families.html
-        featured_image: /images/coll-family.png
-        title: Families
-    -
-        link: /couples.html
-        featured_image: /images/coll-couples.png
-        title: Couples
-    -
-        link: /lifestyle.html
-        featured_image: /images/coll-lifestyle.png
-        title: Lifestyle
+-
+  link: /weddings.html
+  featured_image: /images/coll-wedding.png
+  title: Weddings
+-
+  link: /families.html
+  featured_image: /images/coll-family.png
+  title: Families
+-
+  link: /couples.html
+  featured_image: /images/coll-couples.png
+  title: Couples
+-
+  link: /lifestyle.html
+  featured_image: /images/coll-lifestyle.png
+  title: Lifestyle
+
+about:
+  - introduction: Well Hello There
+    about-description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius delectus facere quod enim asperiores voluptatibus, consequatur est fuga totam ea distinctio! Quas, delectus vero quasi eum nam in ducimus cupiditate?
+    bryn-photo: /images/bryn-3.png
 ---
-<section class="banner flex items-center justify-center bg-overlay editable" style="background-image: url('/images/Couples/c-lan-27.jpg');">
-    <div class="md:w-[50%] bg-slate-200 p-8">
-      <div class="p-heading banner-inner banner-h1 padded-2 centered padded light-text">
-      <h1 class="editable">Wedding & Lifestyle Photographer</h1>
-      <p class="caps editable">Capturing moments in Colorado & Everywhere</p>
-      </div>
+
+<!-- banner -->
+{% for item in page.banner %}
+<section class="banner flex items-center justify-center bg-overlay editable" style="background-image: url('{{item.banner-image}}');">
+  <div class="md:w-[50%] bg-slate-200 p-8">
+    <div class="p-heading banner-inner banner-h1 padded-2 centered padded light-text">
+    <h1>{{item.title}}</h1>
+    <p class="caps">{{item.description}}</p>
     </div>
+  {% endfor %}
+  </div>
 </section>
 
 <hr class="divider" />
+
 
 <!---welcome banner-->
 
 <section class="grid-middle padded-2 b-bg">
   <div class="col-2"></div>
+
+  {% for item in page.welcome %}
   <div class="col-8 centered padded">
-      <h3 class=" editable">Welcome to Wilder Photography Co.</h3>
-      <p class="editable"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ratione asperiores porro distinctio laborum labore perspiciatis consectetur delectus rerum quam, dolorem, sunt, nulla velit placeat! Amet neque vero molestiae quod?</p>
+      <h3>{{item.title}}</h3>
+      <p> {{item.welcome-description}}</p>
   </div>
   <div class="col-2"></div>
   </section>
  
   <section class="container b-bg tall-50">
     <div class="image-container">
-      <img src="/images/Couples/c-por-11.jpg" alt="Left Image" class="image-frame editable" />
-      <img src="images/Wedding/w-por-6.jpg" alt="Center Image" class="editable" />
-      <img src="/images/Families/f-por-14.jpg" alt="Right Image" class="image-frame editable" />
+      <img src="{{item.left-image}}" alt="Left Image" class="image-frame" />
+      <img src="{{item.center-image}}" alt="Center Image"/>
+      <img src="{{item.right-image}}" alt="Right Image" class="image-frame "/>
       <img src="/images/plant.png" alt="Leaves" />
       <img src="/images/W.png" alt="W" />
-  </div></section>
+  </div>
+</section>
   <div class="centered col-12 b-bg button-padding padded-1"> 
-      <a href="/contact.html" class="button-black button editable"> Let's Talk </a>
-</div>
+      <a href="/contact.html" class="button-black button"> {{item.button}} </a>
+      {% endfor %}
+  </div>
 
 
 
@@ -120,17 +147,19 @@ collections:
 
 
 
-      <!--- About me section --->
+<!--- About me section --->
       
 <section class="grid-middle padded container">
   <div class="col-6">
+    {% for item in page.about %}
     <img src="/images/W.png" class="am-w hide-sm" />
-    <h2 class="editable">Well hello there.</h2>
-    <p class="editable">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis tempore nihil laboriosam voluptas qui impedit! Facere assumenda quia qui iusto deserunt nihil totam ipsam. Repudiandae consequuntur ipsam fugiat assumenda obcaecati.</p>
+    <h2>{{item.introduction}}</h2>
+    <p>{{item.about-description}}</p>
   </div>
   <div class="col-1"></div>
-  <div class="col-5 tall-60 bg-image portrait image-frame editable" style="background-image: url('/images/bryn-3.png');">
+  <div class="col-5 tall-60 bg-image portrait image-frame" style="background-image: url('{{item.bryn-photo}}');">
   </div>
+  {% endfor %}
 </section>
 
 
