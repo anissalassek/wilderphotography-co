@@ -1,6 +1,11 @@
 ---
 layout: default
 title: Lifestyle
+
+collectionsbanner:
+- background_image: /images/Lifestyle/l-lan-7.jpg
+  title: Lifestyle
+
 lifestyle:
   - column-size: col-6
     aspect-ratio: portrait
@@ -57,19 +62,13 @@ lifestyle:
 
 
 <!--- banner -->
-<section class="wedding-banner flex items-center justify-center editable" style="background-image:url('/images/L-23.jpg')">
-    <div class="md:w-[50%] bg-slate-200 p-8 ">
-        <div class="padded padded-t overlay-c overlay-w centered div-frame">
-            <h2 class="editable">Lifestyle </h2>
-      </div>
-    </div>
-</section>
+{% include collections-banner.html %}
 
 <hr class="divider">
 
 <!--description -->
 <p class="centered padded editable">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum officia hic eveniet dolores necessitatibus laboriosam commodi adipisci? Dolorum exercitationem aperiam, odio reprehenderit explicabo, labore obcaecati quisquam odit iste ipsum beatae.</p>
-
+<hr class="divider">
 <!-- gallery -->
 
 <div class="gallery grid-middle padded">

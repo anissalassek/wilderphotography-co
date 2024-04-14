@@ -1,0 +1,18 @@
+<!---Collections Header -->
+<div class="padded b-bg"></div>
+
+<section class="grid-middle padded b-bg sm-text-center">
+  <div class="col-1 hide-sm"></div>
+  {% for item in page.topbanner%}
+  <div class="col-4_sm-12">
+      <h1>{{item.title}}</h1>
+      
+  </div>
+  <div class="col-1 hide-sm"></div>
+    <div class="col-6_sm-12 image-container-collections">
+      <img src="{{item.left_image}}" alt="Left Image" class="image-frame hide-sm" />
+      <img src="{{item.center_image}}" alt="Center Image" class="sm-imageframe" />
+      <img src="/images/aboutme-leaves.png" alt="Leaves" class="hide-sm" />
+    </div>
+  {% endfor %}
+  </section>

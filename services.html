@@ -34,7 +34,7 @@ collections:
 topbanner:
 - title: My Services
   left_image: /images/Couples/c-por-11.jpg
-  center_image: /images/Wedding/w-por-6.jpg
+  center_image: /images/Couples/c-por-8.jpg
 
 faq:
 - question: Question 1
@@ -45,29 +45,13 @@ faq:
   answer: Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nisi deleniti fugit, quisquam vitae blanditiis iusto odit quaerat aliquid quia assumenda quasi dignissimos.
 
 button-banner:
-  - background_image: /images/Wedding/w-lan-3.jpg
-    button-title: Like what you see?
-    button-text: Let's Talk
-    link: /contact.html  
+- background_image: /images/Couples/c-lan-36.jpg
+  button-title: Like what you see?
+  button-text: Let's Talk
+  link: /contact.html  
 ---
-<!---Collections Header -->
-<div class="padded b-bg"></div>
 
-<section class="grid-middle padded b-bg sm-text-center">
-  <div class="col-1 hide-sm"></div>
-  <div class="col-4_sm-12">
-      <h1 class="editable">My Services</h1>
-      
-  </div>
-  <div class="col-1 hide-sm"></div>
-  {% for item in page.topbanner%}
-    <div class="col-6_sm-12 image-container-collections">
-      <img src="{{item.left_image}}" alt="Left Image" class="image-frame hide-sm" />
-      <img src="{{item.center_image}}" alt="Center Image" class="sm-imageframe" />
-      <img src="/images/aboutme-leaves.png" alt="Leaves" class="hide-sm" />
-    </div>
-  {% endfor %}
-  </section>
+{% include topbanner.html %}
 
   <hr class="divider" />
 

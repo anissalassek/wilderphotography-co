@@ -1,0 +1,10 @@
+<!--- banner -->
+{% for item in page.collectionsbanner %}
+<section class="wedding-banner flex items-center justify-center" style="background-image:url('{{item.background_image}}')">
+    <div class="md:w-[50%] bg-slate-200 p-8 ">
+        <div class="padded padded-t overlay-c overlay-w centered div-frame">
+            <h2>{{item.title}}</h2>
+        </div>
+    </div>
+{% endfor %}   
+</section>
