@@ -33,7 +33,7 @@ about:
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius delectus
       facere quod enim asperiores voluptatibus, consequatur est fuga totam ea
       distinctio! Quas, delectus vero quasi eum nam in ducimus cupiditate?
-    bryn-photo: /images/bryn-3.png
+    background_image: /images/bryn-3.png
 testimonials:
   - customer-text: >-
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto vitae
@@ -51,6 +51,7 @@ button-banner:
   - background_image: /images/Wedding/w-lan-3.jpg
     button-title: Like what you see?
     button-text: Let's Talk
+    link: /contact.html
 ---
 <!-- banner -->
 {% for item in page.banner %}
@@ -157,7 +158,7 @@ button-banner:
     <p>{{item.about-description}}</p>
   </div>
   <div class="col-1"></div>
-  <div class="col-5 tall-60 bg-image portrait image-frame" style="background-image: url('{{item.bryn-photo}}');">
+  <div class="col-5 tall-60 bg-image portrait image-frame" style="background-image: url('{{item.background_image}}');">
   </div>
   {% endfor %}
 </section>
