@@ -30,6 +30,25 @@ collections:
   description: >-
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ea
             quia doloremque.
+
+topbanner:
+- title: My Services
+  left_image: /images/Couples/c-por-11.jpg
+  center_image: /images/Wedding/w-por-6.jpg
+
+faq:
+- question: Question 1
+  answer: Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nisi deleniti fugit, quisquam vitae blanditiis iusto odit quaerat aliquid quia assumenda quasi dignissimos.
+- question: Question 1
+  answer: Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nisi deleniti fugit, quisquam vitae blanditiis iusto odit quaerat aliquid quia assumenda quasi dignissimos.
+- question: Question 1
+  answer: Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nisi deleniti fugit, quisquam vitae blanditiis iusto odit quaerat aliquid quia assumenda quasi dignissimos.
+
+button-banner:
+  - background_image: /images/Wedding/w-lan-3.jpg
+    button-title: Like what you see?
+    button-text: Let's Talk
+    link: /contact.html  
 ---
 <!---Collections Header -->
 <div class="padded b-bg"></div>
@@ -41,11 +60,13 @@ collections:
       
   </div>
   <div class="col-1 hide-sm"></div>
+  {% for item in page.topbanner%}
     <div class="col-6_sm-12 image-container-collections">
-      <img src="/images/Couples/c-por-11.jpg" alt="Left Image" class="image-frame hide-sm editable" />
-      <img src="images/Wedding/w-por-6.jpg" alt="Center Image" class="sm-imageframe editable" />
-      <img src="/images/aboutme-leaves.png" alt="Leaves" class="hide-sm editable" />
+      <img src="{{item.left_image}}" alt="Left Image" class="image-frame hide-sm" />
+      <img src="{{item.center_image}}" alt="Center Image" class="sm-imageframe" />
+      <img src="/images/aboutme-leaves.png" alt="Leaves" class="hide-sm" />
     </div>
+  {% endfor %}
   </section>
 
   <hr class="divider" />
@@ -87,24 +108,13 @@ collections:
         <h2 class="editable">Frequently Asked Questions</h2>
     </div>
     <div class="col-8_xs-12 xs-text-center right">
-        <h3 class="editable">Question</h3>
-        <p class="editable">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora facilis itaque autem qui quaerat vel quod mollitia nisi vero, fugit.</p>
-        <h3 class="editable">Question</h3>
-        <p class="editable">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora facilis itaque autem qui quaerat vel quod mollitia nisi vero, fugit.</p>
-        <h3 class="editable">Question</h3>
-        <p class="editable">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora facilis itaque autem qui quaerat vel quod mollitia nisi vero, fugit.</p>
+      {% for item in page.faq%}
+        <h3>{{item.question}}</h3>
+        <p>{{item.answer}}</p>
+      {% endfor %}
     </div>
 </section>
 
 <!---Button -->
 
-<section class="grid-middle centered">
-    <div class="col-12 tall-60 bg-image overlay container" style="background-image: url(/images/Couples/c-lan-14.jpg);">
-      <div class="padded padded-t overlay-c overlay-1 centered div-frame">
-        <h2 class="editable">Like what you see? 
-          <p class="editable"><a href="/contact.html" class="button button-black editable"> Let's Talk </a></p><p>
-        </p></h2>
-        
-     </div>
-    </div>
-  </section>
+{% include page.button-banner.html%}
