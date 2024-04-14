@@ -2,55 +2,58 @@
 layout: default
 title: Homepage
 banner:
-- title: Wedding & Lifestyle Photographer 
-  description: capturing moments in Colorado & beyond
-  banner-image: /images/Couples/c-lan-27.jpg
-
-welcome: 
-- title: Welcome to Wilder Photography Co.
-  welcome-description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id odit laboriosam est temporibus, aperiam modi quae beatae, ab, repellat delectus saepe quo mollitia labore repellendus! Sit earum blanditiis rem perspiciatis!
-  left-image: /images/Couples/c-por-11.jpg
-  center-image: /images/Wedding/w-por-6.jpg
-  right-image: /images/Families/f-por-14.jpg
-  button: Let's Talk
-
+  - title: Wedding & Lifestyle Photographer
+    description: capturing moments in Colorado & beyond
+    banner-image: /images/Couples/c-lan-27.jpg
+welcome:
+  - title: Welcome to Wilder Photography Co.
+    welcome-description: >-
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id odit
+      laboriosam est temporibus, aperiam modi quae beatae, ab, repellat delectus
+      saepe quo mollitia labore repellendus! Sit earum blanditiis rem
+      perspiciatis!
+    left-image: /images/Couples/c-por-11.jpg
+    center-image: /images/Wedding/w-por-6.jpg
+    right-image: /images/Families/f-por-14.jpg
+    button: Let's Talk
 collections:
--
-  link: /weddings.html
-  featured_image: /images/coll-wedding.png
-  title: Weddings
--
-  link: /families.html
-  featured_image: /images/coll-family.png
-  title: Families
--
-  link: /couples.html
-  featured_image: /images/coll-couples.png
-  title: Couples
--
-  link: /lifestyle.html
-  featured_image: /images/coll-lifestyle.png
-  title: Lifestyle
-
+  - link: /weddings.html
+    featured_image: /images/coll-wedding.png
+    title: Weddings
+  - link: /families.html
+    featured_image: /images/coll-family.png
+    title: Families
+  - link: /couples.html
+    featured_image: /images/coll-couples.png
+    title: Couples
+  - link: /lifestyle.html
+    featured_image: /images/coll-lifestyle.png
+    title: Lifestyle
 about:
   - introduction: Well Hello There
-    about-description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius delectus facere quod enim asperiores voluptatibus, consequatur est fuga totam ea distinctio! Quas, delectus vero quasi eum nam in ducimus cupiditate?
+    about-description: >-
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius delectus
+      facere quod enim asperiores voluptatibus, consequatur est fuga totam ea
+      distinctio! Quas, delectus vero quasi eum nam in ducimus cupiditate?
     bryn-photo: /images/bryn-3.png
-
 testimonials:
-  - customer-text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto vitae culpa amet repellat, quasi aliquid eos eum fuga. 
+  - customer-text: >-
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto vitae
+      culpa amet repellat, quasi aliquid eos eum fuga.
     customer-name: customer name
-  - customer-text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto vitae culpa amet repellat, quasi aliquid eos eum fuga. 
+  - customer-text: >-
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto vitae
+      culpa amet repellat, quasi aliquid eos eum fuga.
     customer-name: customer name
-  - customer-text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto vitae culpa amet repellat, quasi aliquid eos eum fuga. 
+  - customer-text: >-
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto vitae
+      culpa amet repellat, quasi aliquid eos eum fuga.
     customer-name: customer name
-
 button-banner:
   - background_image: /images/Wedding/w-lan-3.jpg
     button-title: Like what you see?
     button-text: Let's Talk
 ---
-
 <!-- banner -->
 {% for item in page.banner %}
 <section class="banner flex items-center justify-center bg-overlay editable" style="background-image: url('{{item.banner-image}}');">
@@ -82,8 +85,8 @@ button-banner:
   <section class="container b-bg tall-50">
     <div class="image-container">
       <img src="{{item.left-image}}" alt="Left Image" class="image-frame" />
-      <img src="{{item.center-image}}" alt="Center Image"/>
-      <img src="{{item.right-image}}" alt="Right Image" class="image-frame "/>
+      <img src="{{item.center-image}}" alt="Center Image" />
+      <img src="{{item.right-image}}" alt="Right Image" class="image-frame " />
       <img src="/images/plant.png" alt="Leaves" />
       <img src="/images/W.png" alt="W" />
   </div>
