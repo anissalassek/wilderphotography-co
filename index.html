@@ -4,7 +4,7 @@ title: Homepage
 banner:
 - title: Wedding & Lifestyle Photographer 
   description: capturing moments in Colorado & beyond
-  banner-image: /images/Couples/c-lan-27.jpg
+  background_image: /images/Couples/c-lan-27.jpg
 
 welcome: 
 - title: Welcome to Wilder Photography Co.
@@ -54,11 +54,11 @@ button-banner:
 ---
 <!-- banner -->
 {% for item in page.banner %}
-<section class="banner flex items-center justify-center bg-overlay" style="background-image: url('{{item.banner-image}}');">
+<section class="banner flex items-center justify-center bg-overlay" style="background-image: url('{{item.background_image}}');">
   <div class="md:w-[50%] bg-slate-200 p-8">
     <div class="p-heading banner-inner banner-h1 padded-2 centered padded light-text">
-    <h1>{{item.banner-title}}</h1>
-    <p class="caps">{{item.banner-description}}</p>
+    <h1>{{item.title}}</h1>
+    <p class="caps">{{item.description}}</p>
     </div>
   {% endfor %}
   </div>
