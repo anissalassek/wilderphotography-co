@@ -1,13 +1,11 @@
 ---
 layout: default
 title: Weddings
-
 collectionsbanner:
-- background_image: /images/Wedding/w-lan-4.jpg
-  title: Weddings
-
+  - background_image: /images/Wedding/w-lan-4.jpg
+    title: Weddings
 gallery:
-  - column-size: col-6
+  - column-size:
     aspect-ratio: portrait
     background_image: /images/Wedding/w-por-1.jpg
   - column-size: col-6
@@ -15,7 +13,7 @@ gallery:
     background_image: /images/Wedding/w-por-2.jpg
   - column-size: col-12
     aspect-ratio: landscape
-    background_image: /images/Wedding/w-lan-5.jpg  
+    background_image: /images/Wedding/w-lan-5.jpg
   - column-size: col-12
     aspect-ratio: landscape
     background_image: /images/Wedding/w-lan-1.jpg
@@ -27,28 +25,26 @@ gallery:
     background_image: /images/Wedding/w-por-4.jpg
   - column-size: col-12
     aspect-ratio: portrait
-    background_image: /images/Wedding/w-por-6.jpg   
+    background_image: /images/Wedding/w-por-6.jpg
   - column-size: col-6
     aspect-ratio: portrait
-    background_image: /images/Wedding/w-por-5.jpg  
+    background_image: /images/Wedding/w-por-5.jpg
   - column-size: col-6
     aspect-ratio: portrait
-    background_image: /images/Wedding/w-por-7.jpg   
+    background_image: /images/Wedding/w-por-7.jpg
   - column-size: col-12_sm-12
     aspect-ratio: landscape
     background_image: /images/Wedding/W-lan-4.jpg
 ---
-
-
 <!--- banner -->
 {% include collections-banner.html %}
 
-<hr class="divider">
+<hr class="divider" />
 
 <!--description -->
 <p class="centered padded editable">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum officia hic eveniet dolores necessitatibus laboriosam commodi adipisci? Dolorum exercitationem aperiam, odio reprehenderit explicabo, labore obcaecati quisquam odit iste ipsum beatae.</p>
 
-<hr class="divider">
+<hr class="divider" />
 
 <!-- gallery -->
 
@@ -56,8 +52,7 @@ gallery:
     {% for item in page.gallery %}
 
     <div class="{{item.column-size}}">
-      <div class="bg-image {{item.aspect-ratio}}"
-           style="background-image: url('{{item.background_image}}');">
+      <div class="bg-image {{item.aspect-ratio}}" style="background-image: url('{{item.background_image}}');">
       </div>
     </div>
 
@@ -78,7 +73,7 @@ gallery:
 <section class="grid b-bg centered padded">
     <div class="col-12">
       <h2 class="editable">Like what you see? 
-        <p class="editable"><a href="/contact.html" class="button button-black"> Let's Talk </a><p>
-      </h2>
+        <p class="editable"><a href="/contact.html" class="button button-black"> Let's Talk </a></p><p>
+      </p></h2>
     </div>
 </section>
