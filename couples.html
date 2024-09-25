@@ -1,12 +1,9 @@
 ---
 layout: default
 title: Couples
-
 collectionsbanner:
-- background_image: /images/Couples/c-lan-7.jpg
-  title: Couples
-
-
+  - background_image: /images/Couples/c-lan-7.jpg
+    title: Couples
 couples:
   - column-size: col-6
     aspect-ratio: portrait
@@ -66,17 +63,15 @@ couples:
     aspect-ratio: landscape
     background_image: /images/Couples/c-lan-5.jpg
 ---
-
-
 <!--- banner -->
 {% include collections-banner.html %}
 
-<hr class="divider">
+<hr class="divider" />
 
 <!--description -->
 <p class="centered padded editable">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum officia hic eveniet dolores necessitatibus laboriosam commodi adipisci? Dolorum exercitationem aperiam, odio reprehenderit explicabo, labore obcaecati quisquam odit iste ipsum beatae.</p>
 
-<hr class="divider">
+<hr class="divider" />
 
 <!-- gallery -->
 
@@ -84,8 +79,7 @@ couples:
     {% for item in page.couples %}
 
     <div class="{{item.column-size}}">
-      <div class="bg-image {{item.aspect-ratio}}"
-           style="background-image: url('{{item.background_image}}');">
+      <div class="bg-image {{item.aspect-ratio}}" style="background-image: url('{{item.background_image}}');">
       </div>
     </div>
 
@@ -95,7 +89,9 @@ couples:
 <!--links for other collections-->
 <section class="grid">
   <div class="col-12 centered">
-    <h4 class="editable">Other collections</h4>
+    <h4 class="editable">
+        Other collections
+    </h4>
     <a href="/weddings.html">Weddings</a> |
     <a href="/families.html">Families</a> |
     <a href="/lifestyle.html">Lifestyle</a> 
@@ -106,7 +102,7 @@ couples:
 <section class="grid b-bg centered padded">
     <div class="col-12">
       <h2 class="editable">Like what you see? 
-        <p class="editable"><a href="/contact.html" class="button button-black"> Let's Talk </a><p>
-      </h2>
+        <p class="editable"><a href="/contact.html" class="button button-black"> Let's Talk </a></p><p>
+      </p></h2>
     </div>
 </section>
