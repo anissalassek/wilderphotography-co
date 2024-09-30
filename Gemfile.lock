@@ -83,7 +83,7 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
-  jekyll (~> 3.9)
+  jekyll
   kramdown-parser-gfm (~> 1.1)
   webrick (~> 1.7)
 
