@@ -74,7 +74,7 @@ GEM
     mercenary (0.4.0)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
-    public_suffix (6.0.1)
+    public_suffix (2.0.2)
     rake (13.2.1)
     rb-fsevent (0.11.2)
     rb-inotify (0.11.1)
@@ -163,6 +163,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
+  public_suffix (= 2.0.2)
 
 BUNDLED WITH
-   2.5.20
+   2.3.8
